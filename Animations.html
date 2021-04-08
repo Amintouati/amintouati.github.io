@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Amin Touati</title>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link href="imgs/favicon.jpg" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    padding-top: 200px;
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 4.5%;
+    font-family: 'Inconsolata', monospace;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 150%;
+    color: #000000;
+    display: block;
+    padding-left: 28%;
+}
+
+.sidenav a:hover {
+    color: #9b9b9b;
+}
+
+.sidenav h2 {
+    padding: 24px 6px 24px 32px;
+    font-size: 150%;
+    color: #000000;
+    display: inline-block;
+    padding-left: 28%;
+    padding-right: 28%;
+    
+}
+
+.text{
+    margin-left: 25%;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Inconsolata', monospace;
+}
+
+.text p {
+    padding: 24px 6px 24px 32px;
+    font-size: 150%;
+    color: #000000;
+    display: inline-block;
+    padding-top: 50%;
+}
+
+.main {
+    margin-left: 50%; /* Same as the width of the sidenav */
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 25px;}
+}
+
+.container-fluid{
+    padding-left: 25%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  opacity: 0.7;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="Acceuil.html"><img src="imgs/apple-touch-icon.jpg" alt="apple-touch-icon" style="padding: 10% 27% 0% 0%;"></a>
+    <h2>Salut, je suis Amin Touati</h2>
+    <a href="Mes_références.html">Mes références</a>
+    <a href="Illustrations.html">Illustrations</a>
+    <a href="Animations.html">Animations</a>
+    <a href="Photographie.html">Photographies</a>
+    <a href="Sculptures.html">Sculptures</a>
+    <a href="Zine.html">Zines</a>
+
+</div>
+
+<!--<div class="text">
+    <p>bite bite bite</p>
+</div>-->
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="column">
+        <a href="pigeon.html"><img src="imgs/pigeon/3_0008.png"/></a>
+        <a href="pez.html"><img src="imgs/pez/frame.jpg"/></a>
+        <a href="fire.html"><img src="imgs/reste_digital/Animation3.gif"/></a>
+      </div>
+      <div class="column">
+        <a href="pigeon_smoking.html"><img src="imgs/pigeon_smoking/Animation2.png"/></a>
+        <a href="gifs.html"><img src="imgs/gif/gh.jpg"/></a>
+        <a href="lycee.html"><img src="imgs/reste_digital/Illustration.gif"/></a>
+      </div>
+      <div class="column">
+        <a href="nighty.html"><img src="imgs/nighty/frame.jpg"/></a>
+        <a href="sun.html"><img src="imgs/sun/frame.jpg"/></a>
+        <a href="ghosty.html"><img src="imgs/ghosty/Chronologie 1_0023.jpg"/></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html> 
