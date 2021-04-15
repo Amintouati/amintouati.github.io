@@ -33,10 +33,17 @@ body {
 }
 
 .sidenav a {
-    padding: 6px 6px 6px 32px;
+    padding-bottom: 20px;
     text-decoration: none;
     font-size: 150%;
     color: #000000;
+    display: block;
+    padding-left: 28%;
+}
+
+.sidenav carotte {
+    padding-bottom: 20px;
+    text-decoration: none;
     display: block;
     padding-left: 28%;
 }
@@ -72,7 +79,7 @@ body {
     margin-left: 24%; /* Same as the width of the sidenav */
     padding-left: 5%;
     padding: auto;
-    width: 50%;
+    width: 70%;
 }
 
 @media screen and (max-height: 450px) {
@@ -80,21 +87,23 @@ body {
     .sidenav a {font-size: 25px;}
 }
 
-.container-fluid{
-    padding-left: 25%;
-}
-
 .row {
   display: flex;
-  flex-wrap: wrap;
   padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 33.3%;
+  max-width: 50%;
   padding: 0 4px;
+  font-family: 'Inconsolata', monospace;
+  line-height: 150%;
+}
+
+
+.column p1 {
+  font-size: 150%;
+  font-weight: bold;
 }
 
 .column img {
@@ -102,14 +111,10 @@ body {
   vertical-align: middle;
   width: 100%;
   border-radius: 5px;
-  cursor: pointer;
   transition: 0.3s linear;
-  opacity: 0.7;
+  flex-basis: 75%;
 }
 
-.column img:hover {
-    opacity: 1;
-}
 
 @media screen and (max-width: 800px) {
   .column {
@@ -126,28 +131,797 @@ body {
   }
 }
 
+.bow {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.bolumn {
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.bolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s linear;
+  flex-basis: 75%;
+}
+
+@media screen and (max-width: 800px) {
+  .bolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .bolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.dow {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.dolumn {
+  max-width: 13%;
+  padding: 0 4px;
+}
+
+.dolumn p{
+  font-size: 100%;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+}
+
+.dolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s linear;
+  flex-basis: 75%;
+}
+
+@media screen and (max-width: 800px) {
+  .dolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .dolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-    <a href="index.html"><img src="imgs/apple-touch-icon.jpg" alt="apple-touch-icon" style="padding: 10% 27% 0% 0%;"></a>
-    <h2>Salut, je suis Amin Touati</h2>
-    <a href="Mes_références.html">Mes références</a>
-    <a href="Illustrations.html">Illustrations</a>
-    <a href="Animations.html">Animations</a>
-    <a href="Photographie.html">Photographies</a>
-    <a href="Sculptures.html">Sculptures</a>
-    <a href="Zine.html">Zines</a>
-    <a href="https://www.instagram.com/cxpvdysq/"><img src="imgs/insta.png" alt="insta" style="padding: 10% 27% 0% 0%; height: 25px; width: 25px;"></a>
+  <div class="carotte">
+    <a href="index.html"><img src="imgs/apple-touch-icon.jpg" alt="apple-touch-icon" style="width:50% ;"></a>
+  </div>
+  <h2>Salut, je suis Amin Touati</h2>
+  <a href="Mes_références.html">Mes références</a>
+  <a href="Illustrations.html">Illustrations</a>
+  <a href="Animations.html">Animations</a>
+  <a href="Photographie.html">Photographies</a>
+  <a href="Sculptures.html">Sculptures</a>
+  <a href="Zine.html">Zines</a>
+  <a href="https://www.instagram.com/cxpvdysq/"><img src="imgs/insta.png" alt="insta" style="padding: 10% 27% 0% 0%; height: 25px; width: 25px;"></a>
 
 
 </div>
 
 <div class="main">
-    <h1>En construction...</h1>
-    <p></p>
-</div>
-
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Akeussel</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/akeussel/">instagram.com/akeussel/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/f_1.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/z_1.jpg" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/d_1.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Jocelyn Charles</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/jocelyncharles1/">instagram.com/jocelyncharles1//</a>
+    </div>
+    <div class="column">
+      <img src="imgs/mes_refs/a_2.gif" />
+      <img src="imgs/mes_refs/b_2.gif" />
+      <img src="imgs/mes_refs/f_2.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Wren McDonald</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/wrenmcdonald/">instagram.com/wrenmcdonald//</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/b_3.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/g_3.jpg" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/a_3.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Freddy Carrasco      </p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/fredbread/">instagram.com/fredbread/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/f_4.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/c_4.png" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/z_4.png" />
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/j_4.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/g_4.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Tim Peacock</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/tim.peacock/">instagram.com/tim.peacock/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/x_5.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/z_5.jpg" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/r_5.jpg">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/t_5.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/y_5.gif" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>hcgtk</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/hcgtk/">instagram.com/hcgtk/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/a_6.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/b_6.png" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/c_6.png" /> 
+      <img src="imgs/mes_refs/i_6.png" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Michelle Kwon</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/kwonshell/">instagram.com/kwonshell//</a>
+    </div>
+    <div class="column">
+      <div class="bow">
+        <div class="bolumn">
+          <img src="imgs/mes_refs/a_7.jpg" />
+        </div>
+        <div class="bolumn">
+          <img src="imgs/mes_refs/b_7.jpg" />
+        </div>
+        <div class="bolumn">
+          <img src="imgs/mes_refs/c_7.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/d_7.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/e_7.jpg" />
+        </div>
+      </div>
+      <div class="bow">
+        <div class="bolumn">
+          <img src="imgs/mes_refs/x_7.jpg" />
+        </div>
+        <div class="bolumn">
+          <img src="imgs/mes_refs/y_7.jpg" />
+        </div>
+        <div class="bolumn">
+          <img src="imgs/mes_refs/r_7.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Ian Worthington</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/worthikids/">instagram.com/worthikids/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/g_9.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/f_9.png" />
+          <img src="imgs/mes_refs/i_9.jpg" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/b_9.png" />
+      <iframe style="display:block; margin-left:auto ;margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/DfR_p5BO-Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Mabel Ye</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/mobblele/">instagram.com/mobblele/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/g_10.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/f_10.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/c_10.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/k_10.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/d_10.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/i_10.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>victoria vincent</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/vewn_/">instagram.com/vewn_/</a>
+    </div>
+    <div class="column">
+      <iframe style="display:block; margin-left: auto;margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/NWeyUpqnKuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/b_11.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/a_11.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/e_11.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/c_11.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Roosh</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/koteri.ink/">instagram.com/koteri.ink/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/e_12.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/b_12.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/a_12.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/c_12.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/f_12.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/h_12.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Johnny Terror</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/johnnyterror/">instagram.com/johnnyterror/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/a_13.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/c_13.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/f_13.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/i_13.jpg" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/j_13.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Mags Munroe</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/magsmunroe/">instagram.com/magsmunroe/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/a_14.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/c_14.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/e_14.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/d_14.png" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/f_14.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>ONE</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://fr.wikipedia.org/wiki/ONE_(mangaka)">wikipedia.org/wiki/ONE_(mangaka)</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/h_15.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/f_15.png" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/b_15.png" />
+      <img src="imgs/mes_refs/g_15.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Katsuhiro Ōtomo</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://fr.wikipedia.org/wiki/Katsuhiro_%C5%8Ctomo">wikipedia.org/wiki/Katsuhiro_Ōtomo</a>
+    </div>
+    <div class="column">
+      <div class="bow">
+        <div class="bolumn">
+          <img src="imgs/mes_refs/g_16.jpeg"/>
+        </div>
+        <div class="bolumn">
+          <img src="imgs/mes_refs/h_16.jpg"/>
+        </div>
+        <div class="bolumn">
+          <img src="imgs/mes_refs/f_16.jpeg"/>
+        </div>
+      </div>
+      <img src="imgs/mes_refs/e_16.jpg"/>
+      <img src="imgs/mes_refs/b_16.jpg"/>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Kim Jung Gi US</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/kimjunggius/">instagram.com/kimjunggius/</a>
+    </div>
+    <div class="column">
+      <img src="imgs/mes_refs/z_17.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Willem Verbeeck</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/willemverb/">instagram.com/willemverb/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/a_18.jpg" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/b_18.jpg" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/c_18.jpg" />
+      <img src="imgs/mes_refs/d_18.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Louis Triol</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/louis_triol/">instagram.com/louis_triol/</a>
+    </div>
+    <div class="column">
+      <img src="imgs/mes_refs/c_19.jpg" />
+      <img src="imgs/mes_refs/b_19.jpg" />
+      <img src="imgs/mes_refs/a_19.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>VUH</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/vuhlandes/">instagram.com/vuhlandes/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/a_20.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/b_20.png" />
+        </div>
+      </div>
+      <img src="imgs/mes_refs/c_20.jpg" />
+      <img src="imgs/mes_refs/d_20.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Wilfrid Wood</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/wilfridwoodsculptor/">instagram.com/wilfridwoodsculptor/</a>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/a_22.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/b_22.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/mes_refs/g_22.png" />
+        </div>
+        <div class="column">
+          <img src="imgs/mes_refs/f_22.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Jack Cox</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/johandrox/">instagram.com/johandrox/</a>
+    </div>
+    <div class="column">
+      <img src="imgs/mes_refs/a_23.png" />
+    </div>
+  </div>
+  <p style="padding-bottom: 150px;"></p>
+  <div class="row">
+    <div class="column" style="padding-top: 100px;   flex-basis: 25%;    ">
+      <p1>Tomàs Barceló Castelà</p1>
+      <p style="padding-bottom: 10px;"></p>
+      <a href="https://www.instagram.com/tomasbarcelocastela/">instagram.com/tomasbarcelocastela/</a>
+    </div>
+    <div class="column">
+      <img src="imgs/mes_refs/a_24.jpg" />
+    </div>
+  </div>
+  <p style="padding-bottom: 200px;"></p>
+  <p style="text-align: center;font-size: 150%;font-weight: bold;font-family: 'Inconsolata', monospace; ">Une Liste d'albums de musique,de films et de séries qui m'inspirent:</p>
+  <div class="dow">
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/albums/trinity.jpeg" />
+      <p>TRINITY</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/albums/gore.jpg" />
+      <p>Gore</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/albums/umla.jpg" />
+      <p>UMLA</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/albums/adiosbahamas.jpg" />
+      <p>Adios Bahamas</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/albums/enfantlune.jpg" />
+      <p>Enfant lune</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/albums/lesétoilesvagabondes.jpg" />
+      <p>Les Étoiles vagabondes</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/albums/eillish.png" />
+      <p>When We All Fall Asleep, Where Do We Go?</p>
+    </div>
+  </div>
+  <p style="padding-bottom: 10px;"></p>
+  <div class="dow">
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/Truman.jpg" />
+      <p>The Truman Show</p>
+      <img src="imgs/mes_refs/films/cherry.jpg" />
+      <p>Cherry</p>
+      <img src="imgs/mes_refs/films/mybeautifulboy.jpg" />
+      <p>My Beautiful Boy</p>
+      <img src="imgs/mes_refs/films/mr.robot.jpg" />
+      <p>Mr.Robot</p>
+      <img src="imgs/mes_refs/films/commentc'estloin.jpg" />
+      <p>Comment c'est loin</p>
+      <img src="imgs/mes_refs/films/drunk.jpg" />
+      <p>Drunk</p>
+      <img src="imgs/mes_refs/films/us.jpg" />
+      <p>Us</p>
+      <img src="imgs/mes_refs/films/theimitationgame.jpg" />
+      <p>Imitation Game</p>
+      <img src="imgs/mes_refs/films/readyplayerone.jpg" />
+      <p>Ready Player One</p>
+      <img src="imgs/mes_refs/films/regularshow.jpg" />
+      <p>Regular Show</p>
+      <img src="imgs/mes_refs/films/princessmononoke.jpg" />
+      <p>Princesse Mononoké</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/getout.jpg" />
+      <p>GET OUT</p>
+      <img src="imgs/mes_refs/films/babydriver.png" />
+      <p>Baby Driver</p>
+      <img src="imgs/mes_refs/films/chaoswalkin.jpg" />
+      <p>Chaos Walking</p>
+      <img src="imgs/mes_refs/films/1917.jpg" />
+      <p>1917</p>
+      <img src="imgs/mes_refs/films/sexeducation.jpg" />
+      <p>Sex Education</p>
+      <img src="imgs/mes_refs/films/theplatform.jpg" />
+      <p>El hoyo</p>
+      <img src="imgs/mes_refs/films/themauritanian.jpg" />
+      <p>The Mauritanian</p>
+      <img src="imgs/mes_refs/films/theendofthefuckingworld.jpg" />
+      <p>The End of the F***ing World</p>
+      <img src="imgs/mes_refs/films/alita.jpg" />
+      <p>Alita</p>
+      <img src="imgs/mes_refs/films/stevenuniverse.jpg" />
+      <p>Steven Universe</p>
+      <img src="imgs/mes_refs/films/levoyagedechihiro.jpg" />
+      <p>Le Voyage de Chihiro</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/lifeofpi.jpg" />
+      <p>Life of Pi</p>
+      <img src="imgs/mes_refs/films/13reasonswhy.jpg" />
+      <p>13 Reasons Why</p>
+      <img src="imgs/mes_refs/films/lesfiguresdel'ombre.jpg" />
+      <p>Hidden Figures</p>
+      <img src="imgs/mes_refs/films/horsnormes.jpg" />
+      <p>Hors Normes</p>
+      <img src="imgs/mes_refs/films/unemerveilleusehistoiredutemps.jpg" />
+      <p>The Theory of Everything</p>
+      <img src="imgs/mes_refs/films/callmebyyourname.jpg" />
+      <p>Call Me by Your Name</p>
+      <img src="imgs/mes_refs/films/Hungergames.jpg" />
+      <p>Hunger Games</p>
+      <img src="imgs/mes_refs/films/inception.jpg" />
+      <p>Inception</p>
+      <img src="imgs/mes_refs/films/lovedeathrobots.jpg" />
+      <p>Love, Death and Robots</p>
+      <img src="imgs/mes_refs/films/ghost.jpg" />
+      <p>Ghost in the Shell</p>
+      <img src="imgs/mes_refs/films/mha.jpeg" />
+      <p>Boku No Hero Academia</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/themaster.jpg" />
+      <p>The Master</p>
+      <img src="imgs/mes_refs/films/unorthodox.jpg" />
+      <p>Unorthodox</p>
+      <img src="imgs/mes_refs/films/mr.nobody.jpg" />
+      <p>Mr.Nobody</p>
+      <img src="imgs/mes_refs/films/amelie.jpg" />
+      <p>Le Fabuleux Destin d'Amélie Poulain</p>
+      <img src="imgs/mes_refs/films/thegrandbudapesthotel.jpg" />
+      <p>The Grand Budapest Hotel</p>
+      <img src="imgs/mes_refs/films/joker.jpg" />
+      <p>Joker</p>
+      <img src="imgs/mes_refs/films/intouchables.jpg" />
+      <p>Intouchables</p>
+      <img src="imgs/mes_refs/films/matrix.jpg" />
+      <p>Matrix</p>
+      <img src="imgs/mes_refs/films/l'îleauxchiens.jpg" />
+      <p>Isle of Dogs</p>
+      <img src="imgs/mes_refs/films/Akira.jpg" />
+      <p>Akira</p>
+      <img src="imgs/mes_refs/films/onepunchman.jpg" />
+      <p>One Punch Man</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/parasite.jpg" />
+      <p>Parasite</p>
+      <img src="imgs/mes_refs/films/lesmiserables.jpg" />
+      <p>Les Misérables</p>
+      <img src="imgs/mes_refs/films/forestgump.jpg" />
+      <p>Forrest Gump</p>
+      <img src="imgs/mes_refs/films/retourverslefutur.jpg" />
+      <p>Back to the Future</p>
+      <img src="imgs/mes_refs/films/laviedadele.jpg" />
+      <p>La Vie d'Adèle</p>
+      <img src="imgs/mes_refs/films/lahaine.jpg" />
+      <p>La Haine</p>
+      <img src="imgs/mes_refs/films/12yearsaslave.jpg" />
+      <p>Twelve Years a Slave</p>
+      <img src="imgs/mes_refs/films/A.I..jpg" />
+      <p>Artificial Intelligence: A.I.</p>
+      <img src="imgs/mes_refs/films/spiderman.jpg" />
+      <p>Spider-Man: New Generation</p>
+      <img src="imgs/mes_refs/films/yournamr.jpg" />
+      <p>Your Name</p>
+      <img src="imgs/mes_refs/films/mobpsycho.png" />
+      <p>Mob Psycho 100</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/whiplash.jpg" />
+      <p>Whiplash</p>
+      <img src="imgs/mes_refs/films/bohemianrhapsody.jpg" />
+      <p>Bohemian Rhapsody</p>
+      <img src="imgs/mes_refs/films/videodrome.jpg" />
+      <p>Videodrome</p>
+      <img src="imgs/mes_refs/films/ladybird.jpg" />
+      <p>Lady Bird</p>
+      <img src="imgs/mes_refs/films/legend.jpg" />
+      <p>I Am Legend</p>
+      <img src="imgs/mes_refs/films/lediabletoutletemps.jpg" />
+      <p>The Devil All The Time</p>
+      <img src="imgs/mes_refs/films/snowpiercer.jpg" />
+      <p>Snowpiercer</p>
+      <img src="imgs/mes_refs/films/thesocialnetwork.jpg" />
+      <p>The Social Network</p>
+      <img src="imgs/mes_refs/films/gravity falls.jpg" />
+      <p>Gravity Falls</p>
+      <img src="imgs/mes_refs/films/tombeaudeslucioles.jpg" />
+      <p>Le Tombeau des lucioles</p>
+      <img src="imgs/mes_refs/films/bananafish.jpg" />
+      <p>Banana Fish</p>
+    </div>
+    <div class="dolumn">
+      <img src="imgs/mes_refs/films/whentheyseeus.jpg" />
+      <p>When They See Us</p>
+      <img src="imgs/mes_refs/films/120bpm.jpg" />
+      <p>120 Battements Par Minute</p>
+      <img src="imgs/mes_refs/films/her.jpg" />
+      <p>Her</p>
+      <img src="imgs/mes_refs/films/unsacdebilles.jpg" />
+      <p>Un sac de billes</p>
+      <img src="imgs/mes_refs/films/exmachina.jpg" />
+      <p>Ex machina</p>
+      <img src="imgs/mes_refs/films/breakingbad.jpg" />
+      <p>Breaking Bad</p>
+      <img src="imgs/mes_refs/films/snowden.jpg" />
+      <p>Snowden</p>
+      <img src="imgs/mes_refs/films/leloupdewallstreet.jpg" />
+      <p>The Wolf of Wall Street</p>
+      <img src="imgs/mes_refs/films/webarebears.jpg" />
+      <p>We Bare Bears</p>
+      <img src="imgs/mes_refs/films/lechateauambulant.jpg" />
+      <p>Le Château ambulant</p>
+      <img src="imgs/mes_refs/films/assassination.jpg" />
+      <p>Assassination Classroom</p>
+    </div>
+  </div>
 </body>
 </html> 
