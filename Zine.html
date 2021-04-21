@@ -16,7 +16,7 @@ src: url(Inconsolata.ttf);
 body {
     padding-top: 200px;
     font-family: "Lato", sans-serif;
-    background-color: #ffffff;
+    background-color: #ffffff; 
 }
 
 .sidenav {
@@ -33,10 +33,17 @@ body {
 }
 
 .sidenav a {
-    padding: 6px 6px 6px 32px;
+    padding-bottom: 20px;
     text-decoration: none;
     font-size: 150%;
     color: #000000;
+    display: block;
+    padding-left: 28%;
+}
+
+.sidenav carotte {
+    padding-bottom: 20px;
+    text-decoration: none;
     display: block;
     padding-left: 28%;
 }
@@ -72,7 +79,14 @@ body {
     margin-left: 24%; /* Same as the width of the sidenav */
     padding-left: 5%;
     padding: auto;
-    width: 50%;
+    width: 70%;
+}
+
+.main p{
+  font-size: 150%;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  line-height: 150%;
 }
 
 @media screen and (max-height: 450px) {
@@ -80,21 +94,23 @@ body {
     .sidenav a {font-size: 25px;}
 }
 
-.container-fluid{
-    padding-left: 25%;
-}
-
 .row {
   display: flex;
-  flex-wrap: wrap;
   padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 33.3%;
+  max-width: 50%;
   padding: 0 4px;
+  font-family: 'Inconsolata', monospace;
+  line-height: 150%;
+}
+
+
+.column p1 {
+  font-size: 150%;
+  font-weight: bold;
 }
 
 .column img {
@@ -102,14 +118,10 @@ body {
   vertical-align: middle;
   width: 100%;
   border-radius: 5px;
-  cursor: pointer;
   transition: 0.3s linear;
-  opacity: 0.7;
+  flex-basis: 75%;
 }
 
-.column img:hover {
-    opacity: 1;
-}
 
 @media screen and (max-width: 800px) {
   .column {
@@ -126,12 +138,93 @@ body {
   }
 }
 
+.bow {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.bolumn {
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.bolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s linear;
+  flex-basis: 75%;
+}
+
+@media screen and (max-width: 800px) {
+  .bolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .bolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.dow {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.dolumn {
+  max-width: 13%;
+  padding: 0 4px;
+}
+
+.dolumn p{
+  font-size: 100%;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+}
+
+.dolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s linear;
+  flex-basis: 75%;
+}
+
+@media screen and (max-width: 800px) {
+  .dolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .dolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 </style>
 </head>
 <body>
 
-    <div class="sidenav">
-    <a href="index.html"><img src="imgs/apple-touch-icon.jpg" alt="apple-touch-icon" style="padding: 10% 27% 0% 0%;"></a>
+<div class="sidenav">
+  <div class="carotte">
+    <a href="index.html"><img src="imgs/apple-touch-icon.jpg" alt="apple-touch-icon" style="width:50% ;"></a>
+  </div>
     <h2>Salut, je suis Amin Touati</h2>
     <a href="Mes_références.html">Mes références</a>
     <a href="Illustrations.html">Illustrations</a>
