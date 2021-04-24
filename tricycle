@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Amin Touati</title>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link href="imgs/favicon.jpg" rel="icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+@font-face {
+font-family: "CustomFont";
+src: url(Inconsolata.ttf);
+}
+
+body {
+    padding-top: 200px;
+    font-family: "Lato", sans-serif;
+    background-color: #ffffff;
+}
+
+.sidenav {
+    height: 100%;
+    width: 25%;
+    font-size: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 4.5%;
+    font-family: 'Inconsolata', monospace;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 170%;
+    color: #000000;
+    display: block;
+    padding-left: 28%;
+}
+
+.sidenav a:hover {
+    color: #9b9b9b;
+}
+
+.sidenav h2 {
+    padding: 24px 6px 24px 32px;
+    font-size: 170%;
+    color: #000000;
+    display: inline-block;
+    padding-left: 28%;
+    padding-right: 28%;
+    
+}
+
+.text{
+    height: 10%;
+    top: 0;
+    left: 0;    
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Inconsolata', monospace;
+}
+
+.text p {
+    padding: 24px 6px 24px 32px;
+    font-size: 150%;
+    color: #000000;
+}
+
+.main {
+    margin-left: 24%; /* Same as the width of the sidenav */
+    padding-left: 5%;
+    padding: auto;
+    width: 50%;
+}
+
+@media screen and (max-height: 40px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 25px;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="index.html"><img src="imgs/apple-touch-icon.jpg" alt="apple-touch-icon" style="padding: 10% 27% 0% 0%;"></a>
+    <h2>Salut, je suis Amin Touati</h2>
+    <a href="Mes_références.html">Mes références</a>
+    <a href="Illustrations.html">Illustrations</a>
+    <a href="Animations.html">Animations</a>
+    <a href="Photographie.html">Photographies</a>
+    <a href="Sculptures.html">Sculptures</a>
+    <a href="Zine.html">Zines</a>
+    <a href="https://www.instagram.com/cxpvdysq/"><img src="imgs/insta.png" alt="insta" style="padding: 10% 27% 0% 0%; height: 25px; width: 25px;"></a>
+
+
+</div>
+
+
+
+<div class="main">
+    <img style="width: 70%;" src="https://lh3.googleusercontent.com/dK8R068S3y94vfmVSM-FmvljaocTKxCQ-TbUSYACiEMIlgsnenQklE6wb9q4YLDwImwSC51HBuW3eYhJUO-UF3yHQDdES--W_0EQ3Pi-UNJhbKIqN6uzFaXleV0TkJAxI-6QRsDv2G8iB5i-fe9Lgbe8BAR2uUGIXOHZm9mFYw9q5WglcMJvIVpY6b8O8or6VeWW0y1eWTNHERrNskZlUGw1gyXPzmhaormhHGKh0WUvxlkkrpf1Zz4SM4eweo2XXish9z6gBM6QWP4awGkDLXt6CW-fKUmVr09zUp-7WzuQNB85scxBxgk-ahW-6val8tKgv-VLonkhf8K-NOCu_vo75tnI8qmmOEPKTopTaF7OI7VbGst28lcSwxmdfiUv94A7l7305Zb9hXjj3O3igQet3lJ1-U7finYlretjkqMSBw6D3oxSaHBh_-PAWhVJcWUZLkx_sbAI5DM5aPkQ6MHUr-F-jUf_aWm3RfAujWpGFUkYvfDpxhuJctyz7K9XxM11iryOVhEe5u4AOAlHCe1PvL40rKuH83vXc5VhRJxcWaxWldYmAPoswDC-OQEJe0bEizcNrQwwHm3jFhfxzm1gRiM_M7LOUgvZead6NVv1q6R1-K2tdK4sflaLlPQA5XjVpNGFyvs-33TWzAFLARDnpgcWhQDupPXxJG9qXB0eNgHOEq8QYpv3ZMnEKO6wmKIAB0H864icW0tDx5Ioxd0=w720-h540-no?authuser=0" >
+    <img style="width: 70%;" src="https://lh3.googleusercontent.com/RUhywc7fAVpFjG8qyyXyo1xGmG93upJpCT_4jz0OBDAZvK5_i21uPYT25c3vG4bFCX3UocgShaAPI6ZAqmpbL8x3nvXMt0VuCNxWo1MbauPSA0lI3tcq7CW9seIHe3Dvll2CmQ_eYZo_cuk1aNwiIky3bIRZR94WmVeOXA_wtAuPw_MG8AePmiqmY70fwpp84x2PiJ4AmihrbKTsyhdJYhwJeCWQvcd9ZvpMJ5zg7TNlHoXntHZxF4PITXo8sQAUw_mXBV9aQjiptq5cCXeHP7vS6aOIrcAiVRBIRwNd2BszeMaPNgcOVUuWW6OhQnUrnyk5eIT_CxT6d5tbUQ2DDCiG9uMsVs2QFWKJRzKMPvgTC_vSZhBw41lFnJ7yWUU57eVTH55VqXwpavHucklgbolZU2KWrdNOxwXBuBGwcaUjQQluLnU7LlH0b_wJehXbfRptGF-Lp81GiNRBhqr1fyOzJqIS1rsBMdM4ODUEEno9bmKEL2e0HWEj_59XnPo_TGHUXtuI279j_yW90jM5fDKm-S8R09V82IKNUfC8auqGdY2xM920F56IL4eJqJnbooqAymr3bBzM5lqpEVe8OHSoUvAS51wis_kqvOxOlsN9BG8_USayKCM4cKVrwdoV1ql85E3flfsgVs10StQyy67XUBNQY2yRtXGZdGa6hoHLpOcmCFMouTPk-zngkshsFBEBDntFCmA31UMgobtk4zw=w720-h540-no?authuser=0" >
+    <img style="width: 70%;" src="https://lh3.googleusercontent.com/LDaF0jstC0_6XJaIv97gtBqU8MZ6Wyv-Dgtl4Sv_EbEUvLqUSQilcJ5WUBtxDIDsfzUvDHK3cHb70wFUzKtXtioo-P-DTlf1RTGHO5XD-qQtZdl2a7V8eAf2HiKNIOjN8MD9hiCRSMoptW3gNgdFvIrUpampXTq7R5pS3alEbOOLWBkTnu7dv7MsXeXW1hQvDhwdIYtoKu-021o5U-s2l0gr9_o82OF_krkUwcHa6KVc46d3mSgfeAgWOcw6SLTe1-kLoaUpSxJKrOkixeeUnz2NzvfgwnYMxctFj0wW3GbYg_pbrQN8MAl-o9mR7SzVoQ6T81va6_GiSPLNZ7xYib35y0kqrfr2lHc7BPDt5ctDI5mi22CeP_PpOOHMgo4HyYLvYzPDrULYrGPLHeYMc_CGa37aYPuYzlyia0yMOp2bvx83C-lr8XgmLxYQjWmjOrNL-vB4YQj-IttLrBPJduYhjLxZX_2MszJk7h_KWC-wZPDh7Tvb8XDMZ6V5Wa1HJkt_qb42ZoOl1O0FbaA2x2KodU5D124jj5rS-nfx2CVr_hLxkGT396gPRCuAN2nFPbfVq1O3A6JT7h_ktpzQrw9BYA1cr8IqoZkS89_49a181V3COG_yjpFyAaJ60Ax6D4NumXA5N8gKwVTGves3P6aA_buza563kzBPgyfm_vxG1puyv_fPbdPrjG2ksayfU5ul8CWN8DHW1NUPGHMXIJM=w720-h540-no?authuser=0" >
+    <img style="width: 70%;" src="https://lh3.googleusercontent.com/waJqIgeUejwlJwL8buVKv3EOdHZ6Mew7FL432lBGIIW6AERRzWkItN8_p_mZPD7G3Ejfh3_a3zViPuxDSHwvc3RdRm4L9rTIjzoqAfG4I_ObuolL-vSsXU3YDrgwnqVS6e4bIe7UDQ_cvcWDw7a33etIz3tWEzcrG9injIFnL6iQsWQTZx_-hK7Y-L8I02d7iKuIVPJH-nlFQ4KE5ckLH2FJwO_395Nf1CCQN0kj9KBm1t7gkTefP8kVszOhasHgyh8HKtqKDWrscTpfp-4L5YKutZnRBXs_ugCTe_vZFBcc300SkMmIhX6O5Vs_ACN844lk8a7Go_vyFvqZa8ybkfZqsUpvPFw-QZtFfa6WE_eVqMtD5oluXR0UzslfDDT6QTmBinwhk3ZoTiYj_l9w1GfPQZSfGXaRIgoOftEXb3YRKUVb9gVMZBZfQJEtMNAFnAN6MhxnRloCYr2mRNycwdO0KjsReyxgRi6onhhp40Av1Gz2qgYFTkiwxRhwVdLidvZfoTOxrkt9tNLBdRfBTb7SeysdloB7DuccpmJugm2uzUSBrab05Hxgig8NettuIfdCmMJKcD84iUx3NUu9s1_exym7_c23Ck49h5YfSQ5-8S-XbOP1EgYhnky5bC_TFISGaHZjqZNH18NkCvXO64EBSy4DDJK12cPlm0keG4x5CMi32DdnnKO5dOvUsxmVhJF5NZFx_lJjXTe68ud1F_M=w1329-h880-no?authuser=0" >
+    <img style="width: 70%;" src="https://lh3.googleusercontent.com/tj-B-HZrZoCesJ87fgadNHZHPx7DQEiJDBrzGxerM4ZwWRgPFtRoR963L7t6K25L7K9lSiQ60oC27lMjMpVUB8Kv5ddrgN4lssMmT35MVNJzB-J5OQ5gMost0FenyTu6-fmmTYQHQlO6TZUQdIwFIZpRITDp3e22mPsb23SSQqXLSIiW-6MQiDJp4vzhwq9SRulqjo-N8D8Oe6uYqQUQgwLNewOds6kFLkQNu_fwLl1tR_g43I85xSDUAqzzGdXPDzzkHI-XE2kP79K7mxmC2WvCsefxMeHZfiXNc381sFG19woYdfOxbdq1wxpS9jgWAISJgFXFl_lUOK9tXJx_CjGB9_hLlvYP1OicGKUoWplFepuS1WISkjmNzxLZ-e1Nqb2Kfbgxt4VJMkgFYGpRsNeKxTGnWioExSUtgTcZrIm8kc1cdTmTwqp2X5_iEtdbsKWzwF2-37pK3ki-UKYVP1MWUvp-_hUXbqo4GIpIWvs82JL2h6iLtdOkBFzzbLnQKq07upjOUsa5v_0IMLLnDq2tUIqWPpsKQyl4UvRoF0xvC4ps7ia9zLlTxX9xweCZwJtgj7p4ykf4baYAqJoW2Udy-jJLKMUWQYUy_zkI41arZakoY16EaY7QjO49vuw1rWCX85GA79nJ7l5CDxvtolE8yGgSsJqVMybmlI6iYa7SlAw8jLJwKt-6h3IjEX2o0_agYahju0iOgu2v6apkfxo=w1329-h880-no?authuser=0" >
+    <img style="width: 70%;" src="https://lh3.googleusercontent.com/3zrxtBYFKDOGsSfDPBhbNA1OaxEUOOj0f7J185A-6BaUQkBnZrL9dJ67SX4ZFzXrf7oSrbnFmAEW5hXNMoCW-JJGB-a65nt7C9Xc3S2OTmfwVWvPj0IsMub7uNRm6usmLIv3oJhPgXAbUVbtLrTgcQIsj4G7HwDWK4KgVsfIqWN6YUHTKgYQvKSvbj_FBwumXsxVRhPNxXVSY0Hob6tx3hw9TwBR-fcT41h-h_kg4ZHiNvbmg3ndhVMmAyxwqxmd1rwUJNPUm3c8xo-Tg83YIVY8SSagPNVi5XwGp3FTPYX4j2Fhuj--jbJEm5t_vYz61w519uRbjXxcerMbY5v9hU-l2LNNb-EOFiAzervatKRU0izdrDY1hvR1uUqDW32BDCk2i6vzlTlbkXR8c1JQ9vkAfox-QdjvKeUhj5e4lOaIe0VK8YxTdaGnas-qFq7orqbaWEMqtqkDfgSE5SQ9XOQF9SdVed58nQMA694aGGPsgy8kUKtgQGl94gjtGsHV7uAGD-Ix7ebFKrRYedPQ3gdZCAoE5ZwYSrdk_BNwmvY84Yo1PqFizvM0_JH6WRlr7GY_ZUKruGhM4cdQ2MnodNcl4ZU-uD2SPT_6aqX66jS3dOnlkPrBrrtHS_T4Obfhs4RDfLtkYU1MXvptqPiwLaorouPPSsjU38HuHvKeUNM9T-TD0UV2-QmPvupvJnk3n6PwPLFkHC1dM87EPTEri4k=w1329-h880-no?authuser=0" >
+</div>
+
+
+</body>
+</html> 
