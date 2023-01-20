@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    text-align: center ;
+    word-spacing: 10px;
+}
+
+.sidenav {
+  display: none;
+}
+
+.sidenav a {
+  display: none;
+}
+
+.sidenav a:hover {
+  display: none;
+}
+
+.titre {
+    text-align: center ;
+    word-spacing: 0px ;
+}
+
+.text {
+    text-align: center ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:rgb(12, 12, 12)
+}
+
+a:hover {
+  color:rgb(130, 130, 130)
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  float: left;
+  padding: 10px;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row2 :after {
+  max-width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 40px;
+}
+
+.TEST {
+  width: 100%;
+}
+
+.rangee {
+  display: none;
+}
+
+.column3 {
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  display: none;
+}
+
+.column3 img {
+  display: none;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1000px) {
+
+.nav {
+  display: none;
+}
+
+.sidenav {
+  display:block;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  text-align: left ;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  display:block;
+  padding: 6px 6px 6px 32px;
+  text-decoration: left;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  display:block;
+  color: rgb(130, 130, 130)
+}
+
+.titre {
+  display:block;
+  text-decoration: left;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+}
+
+.text {
+    text-align:left ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: left;
+}
+
+a:visited {
+  text-decoration: left;
+  color:rgb(12, 12, 12)
+}
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.br {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  display: none;
+
+}
+
+
+
+.left {
+  display: none;
+}
+
+.right {
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  display: none;
+
+}
+
+.sidenav img{
+  max-width: 100%;
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  max-width: 100%;
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: block;
+
+}
+
+.column3 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+}
+
+.column1 {
+  float: none;
+}
+
+.column1 img {
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.mySlides {
+  display: none;
+  padding: 0% 15% 0%;
+}
+
+.prev,
+.next {
+  top: 17%;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- navigation téléphone -->
+<div class="nav">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Sketch/Sketch.html">Skecth</a>
+  <a href="../3 Animation/Animation.html">Animation</a>
+  <a href="../4 Démoreel/Démoreel.html">Démoreel</a>
+  <a href="../5 Photo/Photo.html">Photo</a>
+  <a href="../6 Zine/Zine.html" style="color:#b4b4b4">Zine</a>
+  <a href="../7 about/about.html">about</a>
+</div>
+
+<!-- autres navigations -->
+<div class="sidenav">
+  <img src="LOGO.png" class="img">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Sketch/Sketch.html">Skecth</a>
+  <a href="../3 Animation/Animation.html">Animation</a>
+  <a href="../4 Démoreel/Démoreel.html">Démoreel</a>
+  <a href="../5 Photo/Photo.html">Photo</a>
+  <a href="../6 Zine/Zine.html" style="color:#b4b4b4">Zine</a>
+  <br class="br">
+  <a href="../7 about/about.html">about</a>
+</div>
+
+<div class="main">
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="https://lh3.googleusercontent.com/fKVCemATgmtSaiTAoHdGJbM0Olg9k2us7mmrrbLIxp1IW56-NBwV59-9ZZWS3POH3vdtCXF0R89YCmix4tn2grkTfsHd0kxZdrT-PZD_AhHbo4TMeABeXvsT5Wxo75tXUM-CqVOMFw=w2400" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="https://lh3.googleusercontent.com/7Q6ADKqGVABuO-y9PndXqVX1DocUiRPBKVylsKKuDHXriA2gdLOttulzIJwa0emkyoftqwoLJ2Du1N_0VceanEUyVmb2z0ZpfDx_7XiYHN3Fvb2uOiLr9fWylz1TNOpWC_Vbxf5B_g=w2400" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="https://lh3.googleusercontent.com/8PjEMCREvTm9HK6Vlt8fN2gbb4e81EQdzWmi0yBkDA-oWEP-zdKwhsQngz4N_qq2vgf5EBpnx5jjMK0S59HZJMxTxI58XKCmx4bgQqsr6ALfhYIQp3R0gbU89vXKmC5DawX7WbDw8g=w2400" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="https://lh3.googleusercontent.com/ebXHDjGCaIEiwSqIaP_GHAusqPnoin54iARoX9NmVlyrtFX2KmUg0mCjp5WFFFxhJlji_0VIZwttfDLDnR3Wjnzoti5WIrZXPpHTjmY6_ou_1cWYJUNTe6c4ftOdzcRrRbo0Q8hkJQ=w2400" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="https://lh3.googleusercontent.com/cq8rS0MP3Vr24zLz4b51n979q_CfBNfJKbJ1mn91aWSIyRYLYwi_vbNAf660XdSfRg2W4ZvDgP4M5it52fvXlImSK7yiAutGB7zDqqQ49HbMvdVPhHBxwi-PViYO5Pq1YwZZ1qHO8g=w2400" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="https://lh3.googleusercontent.com/WmwSqXi2WrrX5wzsC3T15d5kwtCS8kHmvS-Kd_SGR2NHxlyHlemapmMdA-IWaSTMLBdC-Gbvci2qrSsCyVMJRV5dRGD09D3LUyCfgz-oNVbGuoejWJBtQJ5ZfxDtb8dLfhxR9i3-rQ=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="https://lh3.googleusercontent.com/xtNjocF6tJVuUXpxn8ICFn2JcvMSQc2LiSq5MB3RIS9JxK_Ssps3BQwfZ_9UnP_IuYAYNlRS7nYAicMRU8iExOmIhuIjE71Hn326mgoL0jtZzgzK_B345UaQ2-o4QF7Uh7eSMVc6QQ=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="https://lh3.googleusercontent.com/7vXdQ7qo5MijdU2CabePkLZRL4w45rm5iZJ2Z2upRuJQB8FgkTnW-oF8X8vjvrbwD3ghU7GmkojPnWBasLI2QN3tVHCtwNxMKQQqPGgSqO0RYQHh8NMom_bxZb3nZ9jNmEzvTzTfkQ=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="https://lh3.googleusercontent.com/QrnkTLiq-MCbCJ-o279CS0SIzfTnrIzOJVpCO76deXYechyRiT3g1wEO74YbZHDRWE88P3dpjlXIltbH0z0WgcoASB2WxYl3LEKmrCe6FePHKKM6o-xEIADpFbHbErdnUZ-rzpbZ6w=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="https://lh3.googleusercontent.com/Y5sFMnBPtBkXrH8pv6eswwXkPbMAi3wZzzPxsbPwd7duUejhInSOb72cLs_7eCGqVlzrO-RHnGLqNTST-E_L3VwQ9wjORF3aG67dZjah6zN4SH7tQMSi6WozNzjTNnRM13hz6a0Uvg=w2400" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  
+    
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+<div class="row2">
+  <div class="column2 left" style="background-color:rgb(255, 255, 255);">
+    <a href="zine maison.html"><img src="https://lh3.googleusercontent.com/34NN59lkurQwPmFByV-wyZSysE9wZ9UgD_kxlRezUiD4sCRgIX9QSfT0Myswlznq9aezK2YTki1v0-oLkXip3Umr65SibSfufK-RkWohO6eg23AOTJaai5OuBOMCINNmEepdzTFHFg=w2400" alt="TEST" class="column img"></a>
+    <a href="zine manif.html"><img src="https://lh3.googleusercontent.com/WmZpuxeEDVHDikE7Nb-r3vAe_j0E3YPntZyEzMUKZ_u0-sq0RIDH9PR6RUv-kY0YaD_QmecerFm3z8326FyZa_GW4g34p6frG5KpQiBzoMoxXX6H9cTMa3gyQX7qpfOP9WnToLM0fQ=w2400" alt="TEST" class="column img"></a>
+  </div>
+  <div class="column2 right" style="background-color:rgb(255, 255, 255);">
+    <a href="zine playa.html"><img src="https://lh3.googleusercontent.com/QubSL1OLD9HQsrjqiUcT8TJl5_r6edgxAPTbEQAmsz1uumm-ExUGn_wvFLWoSa7bRXYrtV_1NEYt9Sl_2U0-eSY6q40bo7nybeUb744ci3Tru0RhUbXK2wGx1K5YDEekKknUfWxzBw=w2400" alt="TEST" class="column img"></a>
+    <a href="zine montagne.html"><img src="https://lh3.googleusercontent.com/sFGoe2cfTEyWMtX68pqk0AJezSPqIVRd9w4ncrLjod55otq7PFufACdPpcaQ1fZo47gIMnfx1gMCsRJA5hgJIwN5GQ9NkT_2xq5tn-13vSVe6B30XPrPISiZZr4w41mzcIoMP8mmpQ=w2400" alt="TEST" class="column img"></a>
+  </div>
+</div>
+
+<div class="row3">
+  <div class="column3" style="background-color:rgb(255, 255, 255);">
+    <a href="zine maison.html"><img src="https://lh3.googleusercontent.com/34NN59lkurQwPmFByV-wyZSysE9wZ9UgD_kxlRezUiD4sCRgIX9QSfT0Myswlznq9aezK2YTki1v0-oLkXip3Umr65SibSfufK-RkWohO6eg23AOTJaai5OuBOMCINNmEepdzTFHFg=w2400" alt="TEST" class="column img"></a>
+    <a href="zine montagne.html"><img src="https://lh3.googleusercontent.com/sFGoe2cfTEyWMtX68pqk0AJezSPqIVRd9w4ncrLjod55otq7PFufACdPpcaQ1fZo47gIMnfx1gMCsRJA5hgJIwN5GQ9NkT_2xq5tn-13vSVe6B30XPrPISiZZr4w41mzcIoMP8mmpQ=w2400" alt="TEST" class="column img"></a>
+  </div>
+  <div class="column3" style="background-color:rgb(255, 255, 255);">
+    <a href="zine playa.html"><img src="https://lh3.googleusercontent.com/QubSL1OLD9HQsrjqiUcT8TJl5_r6edgxAPTbEQAmsz1uumm-ExUGn_wvFLWoSa7bRXYrtV_1NEYt9Sl_2U0-eSY6q40bo7nybeUb744ci3Tru0RhUbXK2wGx1K5YDEekKknUfWxzBw=w2400" alt="TEST" class="column img"></a>
+  </div>
+  <div class="column3" style="background-color:rgb(255, 255, 255);">
+    <a href="zine manif.html"><img src="https://lh3.googleusercontent.com/WmZpuxeEDVHDikE7Nb-r3vAe_j0E3YPntZyEzMUKZ_u0-sq0RIDH9PR6RUv-kY0YaD_QmecerFm3z8326FyZa_GW4g34p6frG5KpQiBzoMoxXX6H9cTMa3gyQX7qpfOP9WnToLM0fQ=w2400" alt="TEST" class="column img"></a>
+  </div>
+</div>
+</div>
+
+<!--
+<img src="https://lh3.googleusercontent.com/KfAAAXMU_sPdpodThlxAj1lCkuexyo03bZ7fC3Gn8UlyPoaGxbZgjrxa_uViNC8LR98JeXBJ2RcGMH2U-dGSMAy6sCAtVj7JljXd5OqBjh9G8DN-gKmjmacp2z7j2kTUDZjNC3Lw=w2400" alt="TEST" class="column img">
+ -->
+
+</body>
+</html>  
