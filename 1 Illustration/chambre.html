@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    text-align: center ;
+    word-spacing: 10px;
+}
+
+.sidenav {
+  display: none;
+}
+
+.sidenav a {
+  display: none;
+}
+
+.sidenav a:hover {
+  display: none;
+}
+
+.titre {
+    text-align: center ;
+    word-spacing: 0px ;
+}
+
+.text {
+    text-align: center ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:rgb(12, 12, 12)
+}
+
+a:hover {
+  color:rgb(130, 130, 130)
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  float: left;
+  padding: 10px;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.column2 img:hover {
+    opacity: 1;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row2 :after {
+  max-width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 40px;
+}
+
+.TEST {
+  width: 100%;
+}
+
+.rangee {
+  display: none;
+}
+
+.column3 {
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  display: none;
+}
+
+.column3 img {
+  display: none;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 img {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column4 iframe {
+  padding-left: 0%; 
+  padding-right: 0%; 
+  width: 100%; 
+  height: 250px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+.nav {
+  display: none;
+}
+
+.sidenav {
+  display:block;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  text-align: left ;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  display:block;
+  padding: 6px 6px 6px 32px;
+  text-decoration: left;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  display:block;
+  color: rgb(130, 130, 130)
+}
+
+.titre {
+  display:block;
+  text-decoration: left;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+}
+
+.text {
+    text-align:left ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: left;
+}
+
+a:visited {
+  text-decoration: left;
+  color:rgb(12, 12, 12)
+}
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.br {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  display: none;
+
+}
+
+
+
+.left {
+  display: none;
+}
+
+.right {
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  display: none;
+
+}
+
+.sidenav img{
+  max-width: 100%;
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  max-width: 100%;
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: block;
+}
+
+.column3 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+    opacity: 0.6;
+}
+
+.column3 img:hover {
+    opacity: 1;
+}
+
+.column1 {
+  float: none;
+}
+
+.column1 img {
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- navigation téléphone -->
+<div class="nav">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Animation/Animation.html">Animation</a>
+  <a href="../3 Demoreel/Demoreel.html">Démoreel</a>
+  <a href="https://www.instagram.com/qsydvpxc/" target="_blank">Photo</a>
+  <a href="../5 Zine/Zine.html"   style="color:#b4b4b4" >Zine</a>
+  <a href="../6 about/about.html">about</a>
+</div>
+
+<!-- autres navigations -->
+<div class="sidenav">
+  <img src="https://lh3.googleusercontent.com/tVPLcAE7uuyrpU49CsG7IjiYiaGRMePnkwzAQPv8aOgh6syfX40iupVFoRon-0_2hBhUeQE7CNcgvJKHRdNTH2wkRHCX1k21kp8Df5QicRkLWzvNiEtY6FbOCXq1NmA8C21NAaBgrg=w2400" class="img">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Animation/Animation.html">Animation</a>
+  <a href="../3 Demoreel/Demoreel.html" >Démoreel</a>
+  <a href="https://www.instagram.com/qsydvpxc/" target="_blank">Photo</a>
+  <a href="../5 Zine/Zine.html"   style="color:#b4b4b4" >Zine</a>
+  <br class="br">
+  <a href="../6 about/about.html">about</a>
+</div>
+
+<div class="main">
+
+  <div class="row1">
+    <div class="column1" style="background-color:rgb(255, 255, 255);">
+      <img src="https://lh3.googleusercontent.com/nIsQ9Furu8CU5HS-bTonMyGZG8bxx4YncG-oTIFA3OHe-G_svDIzcoOhgaYkFcV5nbRiDcpRlatL4PboHTI6sDuI9WbJDsEPAkUiAS0Qr7Q1D6iT_GDRdHhOU1Xhmc5p2L017SuAPg=w2400" class="column img">
+    </div>
+  </div>
+
+  <div class="row2">
+    <div class="column2 left" style="background-color:rgb(255, 255, 255);">
+      <a href="fusain.html"><img src="https://lh3.googleusercontent.com/jvFe1ACQiMiYNrvccU9IcmsTGiZ6w9uGmQ1uxk8_dUOaa2nkhZaFsHwU7lePbjs9TjrK2tDJNFBvWDKxt_7_CPZ3EjC_UkWQCwF37OJ1R6meBV312jx-V-eLzbqLfBRNEDccQW1VDg=w2400"   class="column img"></a>
+      <a href="modele vivant.html"><img src="https://lh3.googleusercontent.com/w74-nOjXsmMRMAqIurWpAbonPoA1ct4BZ-rrsLzOXoPxk7vPuy7dnNZSwNK9fIFvzyBbB0cED5Cy2OiWatsYSIhocmF8Y_n0ZfD80vZoDHIZbeUgD25NL5lXUZfYy75T3O_UQE0Xxw=w2400"   class="column img"></a>
+      <a href="personnes.html"><img src="https://lh3.googleusercontent.com/feQfu97IFlrGJt3pcQd2tyaYn_dkKrQcONiyN_Xnn57x8lgeGysUG_OeGOWiZXmB6CfjHVNxAeLvdmu8PWab_WiE4Q2DHC3jVZGytlVmm7q-1SsvgfU9bgXOTFriqyNzKq6RPmoenA=w2400"   class="column img"></a>
+      <a href="ferme.html"><img src="https://lh3.googleusercontent.com/N5B9UVDkb1UxfmLYUoZRiQg7QhOJwzQq5E53CcRwvNgzxLMc5-NPUqdju0wcPEg6xgv56gX6lABkwmDCrQae7m3Prg84Ee7RWrwsktSUjqvXV9sPBvdV5_zFtQB2O7JT_8w5VEIKSA=w2400"   class="column img"></a>
+      <a href="tigre.html"><img src="https://lh3.googleusercontent.com/pjb37vNWUR0nUwLvTAvy6rZWkEC-t4AXk-GEgfu9Cg9IRn6jGArZjocqXBm6aiPpVuc1HRJPJVpG3zpc2vfQE_TG47ZEvT3tn0aGKNcRoKf4DCSZ1KWIFyAL7OVVyOBzu9t3AzZJ2A=w2400"   class="column img"></a>
+      <a href="murdock.html"><img src="https://lh3.googleusercontent.com/I1eWmMYVsegBDGEsxSs_QK-wFQnwEubrDV78bw4nDPoVjiWNerT00IT--dI2kJJxDmIOLQE6-uoaX8-HxU1SFDCIz_OZ8tJ3hiXhGrmYEjw4k3nsnjPQtdbdPkNYOVgcuFFiReriKA=w2400"   class="column img"></a>
+      <a href="voiture.html"><img src="https://lh3.googleusercontent.com/UCCn_7uygtn_ZYrYcQy9MBy1GJYhFq0Fz35F0VweMnR7E2MsodHAV48aqfg3ERLwUk_j5GCB9am7rlzijxbxbgVFxdziW1mM7X1q-JOnsmT_5WL3FCnW5leR6jfP89NuuL5MK0Csvg=w2400"   class="column img"></a>
+      <a href="lutteur.html"><img src="https://lh3.googleusercontent.com/kiWJKZ7qS-9r7QtEZyxsiTMeih7E-n_0PTa8FZxnvjPHagTtUfAk_wdDSpDkfqZZ36Kd2e1uzRXviOqmzsWwcZcO42W9nCpsI90nHCjU-ysJdBX6WKj0V8fFSM3k7B8GNUwaqWBpLA=w2400"   class="column img"></a>
+      <a href="vieux dessin.html"><img src="https://lh3.googleusercontent.com/tsq1f86K8HypF8PXhPTmJ4PkPTEdhvvydybfJR6388kVGCdhmunpuvhYQQ4zGm2e3gwEwUmHgN0Ay8xwJBiWwpxVLcJ8ahoOIECoeCKl3_EdZeo-F2ekgnpPeWh8kUgtPnX6P8Mawg=w2400"   class="column img"></a>
+      <a href="salon.html"><img src="https://lh3.googleusercontent.com/mmNpfuLSKiobHL7f2wlvJVfNDSBUArlU7ePbAUp0u3L_fTqEOQnY5aVjcEskkDkL2-zjd1_YW9MwBBEzGUz8AIrtqOQz4H_ZOi4wLeBy_LDYX7jzmGWw9pY6_KHnISTuz_Kjn4b-7w=w2400"   class="column img"></a>
+      <a href="bristol.html"><img src="https://lh3.googleusercontent.com/AbXA40AGTyFzFd278Bb7ZEH05mDM_VnkbLN64BcB_EY8oXelQMs1hHAE20J80VtJZl1cCXIQDZRPm7huGvLetoniD4bCHUjlIdD8CGghMsjhoxl_dorvZt3gFoKMPJwkjRN456gVvw=w2400"   class="column img"></a>
+      <a href="boxe.html"><img src="https://lh3.googleusercontent.com/8ZcXEO2vhbcVcWbc8kXpkeI_kAvX4-jWmBsuXncB-zRMnAQDqd_v41mlNCflONJUBw5bYFX1zufV56u8iE2aG1SVRj9powLg-agYRzbgdr0FL2GVxvPQwmpaHI-IpacbVRFIWVClZw=w2400"   class="column img"></a>
+      <a href="nerd.html"><img src="https://lh3.googleusercontent.com/kSNFU-VBkHAdyMLXDajJAePpExkqE2m8YeS79pPKAfsIA_UXSrjug0vM3rOR5xgpEVxf91D9xNghikjdb3W_EEIxegXsbi6xDK_v-_sBOCj0UacguaI6aJk-NJ_sYDOs96iEC5Vfzw=w2400"   class="column img"></a>
+      <a href="sun.html"><img src="https://lh3.googleusercontent.com/znzByU3rKB0NtR_MuMy6BEdD5P7FmTEmcN3VrlmzTQEZD0iqYY4pJW4aXv1MykovTb7Bj5wvqSWvwds_8gmTHJbb93l6jcF2S-fXhhjNm5mQKIaAf0NTKMOeKxIKEuwkPLNyHmKgJg=w2400"   class="column img"></a>
+    </div>
+    <div class="column2 right" style="background-color:rgb(255, 255, 255);">
+      <a href="gravures.html"><img src="https://lh3.googleusercontent.com/ATV8HiXE8vWoMkwIFVNXfTMiXKdMS24tJU6oszwYXpcimMb4_eU6yLouR3F9QzvGqBXlM1qmOVGn7bOuEM_j5IfHVJD8bdJ4fDu5nGVDB345ILNphbZKHdNqlY7H5CJlueUkNbeVgw=w2400"   class="column img"></a>
+      <a href="tetes fusain.html"><img src="https://lh3.googleusercontent.com/P-1QNPzosxY6dqV2XiCaz9T0IVXBMEr1hg-c4g1NOswYb0c1JnlqM8lQHwBrr9z698bFxEv8bzLEWGl9kuMhOYYaNa_EHhirQFKO3gVzswtAoXpb_piyFzhoEODDn3sZmNsafULTgA=w2400"   class="column img"></a>
+      <a href="pieds mains.html"><img src="https://lh3.googleusercontent.com/UB69QYh3m6Z7G9GS8O1sLgvsOoLHNt_ZavUeVXz8ZnAWxP4Bf-CvBvv3moKKnZu18bqzdnKwSusbypCbyNOFbEwcK6LdpIhUi32XH_uQiwAiVU9hRHdexZ0uQZlw1Ulcn1DjndRpUQ=w2400"   class="column img"></a>
+      <a href="canard.html"><img src="https://lh3.googleusercontent.com/IegGq-Ik2d6DsADYus6sn9CQlHxsNeMahP1LARd6xa57S-Xr8nv21bUdXyw4z3Gg1ZWnFjiP6vqLX2rUtpIvN3AZpfq-B0j-yyBTM8NKZH5N5sOaGq7Lm-6eXfKd-fCALeR_RS5Zlg=w2400"   class="column img"></a>
+      <a href="verre.html"><img src="https://lh3.googleusercontent.com/Ggd6YS6BI_kyLm0GM-ZeYreTXEpf4eGvpDc3tWmHrQxXNpe5ME7kVBtBhft0UqqwxioZijRCOc27ZjZDrcYyOUAjnNeHyLXC4X3z40PJIZ2qKdkm1QnFaSc5vjk3c8mLS1F7RF8IEA=w2400"   class="column img"></a>
+      <a href="cuisine.html"><img src="https://lh3.googleusercontent.com/Egu0CYUpApIe-kD9f3h4UaPYkC5_9SSaWZYoWXw0Eydubsg10ImJSGAnJktL1kWiCXNwbkZCKTvT018Qnomt-pPXu28CN2SpuLJxuZQhaeJMBvipE7HQoJmH9xmaPY9umlT32tGMBQ=w2400"   class="column img"></a>
+      <a href="mouche.html"><img src="https://lh3.googleusercontent.com/GezgXxh_O2WYsgTzM9PAoi999yoKp2zhqC4j4016txh-xRPiyH_3dAeZRF9sEY2m1U_GOT3CGOyof-MQCecdRhCxjqRUnpTpEAhts40sOnQP-jEDrNi78zkFWOqsh1_bTLy8GCjSQA=w2400"   class="column img"></a>
+      <a href="tetes.html"><img src="https://lh3.googleusercontent.com/7UiinjLmFqAHVF4Wz0iIm8VvDB6BxPip9djlzofJH8IwsZXc3cdIz3jbF4oihif6ZyYtG7oQMjjyheLpwR6utcCnNmS4ETxOph_57qOjFiaQWGM0UCF9NfdNV98vJl2yoQGS-WxkkA=w2400"   class="column img"></a>
+      <a href="maisons.html"><img src="https://lh3.googleusercontent.com/1siSKRwwn2elsQL2R6KBy038DGGHG5v1XXTCzv7NNM6sdYJIq6o2z1BfihdXk9d1wImJ62LMpViSwYfRpaltnbq9KNfxTDEc8itGSCBQNwzWoFXYFkk2JaljOytXDdCKN9mh1TdBPw=w2400" class="column img"></a>
+      <a href="squelette.html"><img src="https://lh3.googleusercontent.com/AdD0zWTT-SG_BABEc-nnQGc_izFvNwRLvFHxuio-GWGYGWt0yndzRnnNUWljH1E7AqWtdxGunnMqgxmILlB5HiqdDco8IcUoPp7lz5TLfGOt3q8c70drM9iqkJB_CigJPF_p-6PgJQ=w2400"   class="column img"></a>
+      <a href="face.html"><img src="https://lh3.googleusercontent.com/63zL04bOAvDkagIKfPvekPVc1SwUNDbdIPD-HGt7itQWK0vmUzBb3Nh04Bf0d2EGHSFk4yOg-hFsf_2Fzlbq8ATUH9Vf_SHcLmDqNiEmFHIjX-NeejtZAwC7Jm_nI4zaERxEN7iW5Q=w2400"   class="column img"></a>
+      <a href="cartes.html"><img src="https://lh3.googleusercontent.com/dirXNFbiSq8aSWok5RT9x9lx7FZoniz3z-DC1rXVZgCSN7JY---yWFrWAA4QHor8aw6k9w5w9eglp57fJojwdYRhlA9EULy7BSEaO8ZZqfU16BpAvQPI7dvTrQJqYkVtpSZL625eOg=w2400"   class="column img"></a>
+    </div>
+  </div>
+  
+  <div class="row3">
+    <div class="column3" style="background-color:rgb(255, 255, 255);">
+      <a href="fusain.html"><img src="https://lh3.googleusercontent.com/VhbRmoMI0O7zhd61o0q_M8PK9lgZUzMHJASdJa1JdGVdXEs-iMgNUtZ3WymIMAvc1fEl1B7LHlC1oa0GvMArxk69o3QT-ecOf6Mp5HfKV6-GrEWA_PzWdBtbA4dQFTEgv_vhBD83GA=w2400"   class="column img"></a>
+      <a href="modele vivant.html"><img src="https://lh3.googleusercontent.com/w74-nOjXsmMRMAqIurWpAbonPoA1ct4BZ-rrsLzOXoPxk7vPuy7dnNZSwNK9fIFvzyBbB0cED5Cy2OiWatsYSIhocmF8Y_n0ZfD80vZoDHIZbeUgD25NL5lXUZfYy75T3O_UQE0Xxw=w2400"   class="column img"></a>
+      <a href="pieds mains.html"><img src="https://lh3.googleusercontent.com/UB69QYh3m6Z7G9GS8O1sLgvsOoLHNt_ZavUeVXz8ZnAWxP4Bf-CvBvv3moKKnZu18bqzdnKwSusbypCbyNOFbEwcK6LdpIhUi32XH_uQiwAiVU9hRHdexZ0uQZlw1Ulcn1DjndRpUQ=w2400"   class="column img"></a>
+      <a href="personnes.html"><img src="https://lh3.googleusercontent.com/feQfu97IFlrGJt3pcQd2tyaYn_dkKrQcONiyN_Xnn57x8lgeGysUG_OeGOWiZXmB6CfjHVNxAeLvdmu8PWab_WiE4Q2DHC3jVZGytlVmm7q-1SsvgfU9bgXOTFriqyNzKq6RPmoenA=w2400"   class="column img"></a>
+      <a href="murdock.html"><img src="https://lh3.googleusercontent.com/I1eWmMYVsegBDGEsxSs_QK-wFQnwEubrDV78bw4nDPoVjiWNerT00IT--dI2kJJxDmIOLQE6-uoaX8-HxU1SFDCIz_OZ8tJ3hiXhGrmYEjw4k3nsnjPQtdbdPkNYOVgcuFFiReriKA=w2400"   class="column img"></a>
+      <a href="mouche.html"><img src="https://lh3.googleusercontent.com/GezgXxh_O2WYsgTzM9PAoi999yoKp2zhqC4j4016txh-xRPiyH_3dAeZRF9sEY2m1U_GOT3CGOyof-MQCecdRhCxjqRUnpTpEAhts40sOnQP-jEDrNi78zkFWOqsh1_bTLy8GCjSQA=w2400"   class="column img"></a>
+      <a href="lutteur.html"><img src="https://lh3.googleusercontent.com/kiWJKZ7qS-9r7QtEZyxsiTMeih7E-n_0PTa8FZxnvjPHagTtUfAk_wdDSpDkfqZZ36Kd2e1uzRXviOqmzsWwcZcO42W9nCpsI90nHCjU-ysJdBX6WKj0V8fFSM3k7B8GNUwaqWBpLA=w2400"   class="column img"></a>
+      <a href="squelette.html"><img src="https://lh3.googleusercontent.com/AdD0zWTT-SG_BABEc-nnQGc_izFvNwRLvFHxuio-GWGYGWt0yndzRnnNUWljH1E7AqWtdxGunnMqgxmILlB5HiqdDco8IcUoPp7lz5TLfGOt3q8c70drM9iqkJB_CigJPF_p-6PgJQ=w2400"   class="column img"></a>
+      <a href="face.html"><img src="https://lh3.googleusercontent.com/63zL04bOAvDkagIKfPvekPVc1SwUNDbdIPD-HGt7itQWK0vmUzBb3Nh04Bf0d2EGHSFk4yOg-hFsf_2Fzlbq8ATUH9Vf_SHcLmDqNiEmFHIjX-NeejtZAwC7Jm_nI4zaERxEN7iW5Q=w2400"   class="column img"></a>
+      <a href="nerd.html"><img src="https://lh3.googleusercontent.com/kSNFU-VBkHAdyMLXDajJAePpExkqE2m8YeS79pPKAfsIA_UXSrjug0vM3rOR5xgpEVxf91D9xNghikjdb3W_EEIxegXsbi6xDK_v-_sBOCj0UacguaI6aJk-NJ_sYDOs96iEC5Vfzw=w2400"   class="column img"></a>
+    </div>
+    <div class="column3" style="background-color:rgb(255, 255, 255);">
+      <a href="tetes fusain.html"><img src="https://lh3.googleusercontent.com/P-1QNPzosxY6dqV2XiCaz9T0IVXBMEr1hg-c4g1NOswYb0c1JnlqM8lQHwBrr9z698bFxEv8bzLEWGl9kuMhOYYaNa_EHhirQFKO3gVzswtAoXpb_piyFzhoEODDn3sZmNsafULTgA=w2400"   class="column img"></a>
+      <a href="tigre.html"><img src="https://lh3.googleusercontent.com/pjb37vNWUR0nUwLvTAvy6rZWkEC-t4AXk-GEgfu9Cg9IRn6jGArZjocqXBm6aiPpVuc1HRJPJVpG3zpc2vfQE_TG47ZEvT3tn0aGKNcRoKf4DCSZ1KWIFyAL7OVVyOBzu9t3AzZJ2A=w2400"   class="column img"></a>
+      <a href="verre.html"><img src="https://lh3.googleusercontent.com/Ggd6YS6BI_kyLm0GM-ZeYreTXEpf4eGvpDc3tWmHrQxXNpe5ME7kVBtBhft0UqqwxioZijRCOc27ZjZDrcYyOUAjnNeHyLXC4X3z40PJIZ2qKdkm1QnFaSc5vjk3c8mLS1F7RF8IEA=w2400"   class="column img"></a>
+      <a href="vieux dessin.html"><img src="https://lh3.googleusercontent.com/tsq1f86K8HypF8PXhPTmJ4PkPTEdhvvydybfJR6388kVGCdhmunpuvhYQQ4zGm2e3gwEwUmHgN0Ay8xwJBiWwpxVLcJ8ahoOIECoeCKl3_EdZeo-F2ekgnpPeWh8kUgtPnX6P8Mawg=w2400"   class="column img"></a>
+      <a href="voiture.html"><img src="https://lh3.googleusercontent.com/UCCn_7uygtn_ZYrYcQy9MBy1GJYhFq0Fz35F0VweMnR7E2MsodHAV48aqfg3ERLwUk_j5GCB9am7rlzijxbxbgVFxdziW1mM7X1q-JOnsmT_5WL3FCnW5leR6jfP89NuuL5MK0Csvg=w2400"   class="column img"></a>
+      <a href="tetes.html"><img src="https://lh3.googleusercontent.com/7UiinjLmFqAHVF4Wz0iIm8VvDB6BxPip9djlzofJH8IwsZXc3cdIz3jbF4oihif6ZyYtG7oQMjjyheLpwR6utcCnNmS4ETxOph_57qOjFiaQWGM0UCF9NfdNV98vJl2yoQGS-WxkkA=w2400"   class="column img"></a>
+      <a href="salon.html"><img src="https://lh3.googleusercontent.com/mmNpfuLSKiobHL7f2wlvJVfNDSBUArlU7ePbAUp0u3L_fTqEOQnY5aVjcEskkDkL2-zjd1_YW9MwBBEzGUz8AIrtqOQz4H_ZOi4wLeBy_LDYX7jzmGWw9pY6_KHnISTuz_Kjn4b-7w=w2400"   class="column img"></a>
+      <a href="bristol.html"><img src="https://lh3.googleusercontent.com/AbXA40AGTyFzFd278Bb7ZEH05mDM_VnkbLN64BcB_EY8oXelQMs1hHAE20J80VtJZl1cCXIQDZRPm7huGvLetoniD4bCHUjlIdD8CGghMsjhoxl_dorvZt3gFoKMPJwkjRN456gVvw=w2400"   class="column img"></a>
+      <a href="sun.html"><img src="https://lh3.googleusercontent.com/znzByU3rKB0NtR_MuMy6BEdD5P7FmTEmcN3VrlmzTQEZD0iqYY4pJW4aXv1MykovTb7Bj5wvqSWvwds_8gmTHJbb93l6jcF2S-fXhhjNm5mQKIaAf0NTKMOeKxIKEuwkPLNyHmKgJg=w2400"   class="column img"></a>
+    </div>
+    <div class="column3" style="background-color:rgb(255, 255, 255);">
+      <a href="gravures.html"><img src="https://lh3.googleusercontent.com/ATV8HiXE8vWoMkwIFVNXfTMiXKdMS24tJU6oszwYXpcimMb4_eU6yLouR3F9QzvGqBXlM1qmOVGn7bOuEM_j5IfHVJD8bdJ4fDu5nGVDB345ILNphbZKHdNqlY7H5CJlueUkNbeVgw=w2400"   class="column img"></a>
+      <a href="canard.html"><img src="https://lh3.googleusercontent.com/IegGq-Ik2d6DsADYus6sn9CQlHxsNeMahP1LARd6xa57S-Xr8nv21bUdXyw4z3Gg1ZWnFjiP6vqLX2rUtpIvN3AZpfq-B0j-yyBTM8NKZH5N5sOaGq7Lm-6eXfKd-fCALeR_RS5Zlg=w2400"   class="column img"></a>
+      <a href="ferme.html"><img src="https://lh3.googleusercontent.com/N5B9UVDkb1UxfmLYUoZRiQg7QhOJwzQq5E53CcRwvNgzxLMc5-NPUqdju0wcPEg6xgv56gX6lABkwmDCrQae7m3Prg84Ee7RWrwsktSUjqvXV9sPBvdV5_zFtQB2O7JT_8w5VEIKSA=w2400"   class="column img"></a>
+      <a href="cuisine.html"><img src="https://lh3.googleusercontent.com/Egu0CYUpApIe-kD9f3h4UaPYkC5_9SSaWZYoWXw0Eydubsg10ImJSGAnJktL1kWiCXNwbkZCKTvT018Qnomt-pPXu28CN2SpuLJxuZQhaeJMBvipE7HQoJmH9xmaPY9umlT32tGMBQ=w2400"   class="column img"></a>
+      <a href="maisons.html"><img src="https://lh3.googleusercontent.com/1siSKRwwn2elsQL2R6KBy038DGGHG5v1XXTCzv7NNM6sdYJIq6o2z1BfihdXk9d1wImJ62LMpViSwYfRpaltnbq9KNfxTDEc8itGSCBQNwzWoFXYFkk2JaljOytXDdCKN9mh1TdBPw=w2400" class="column img"></a>
+      <a href="boxe.html"><img src="https://lh3.googleusercontent.com/8ZcXEO2vhbcVcWbc8kXpkeI_kAvX4-jWmBsuXncB-zRMnAQDqd_v41mlNCflONJUBw5bYFX1zufV56u8iE2aG1SVRj9powLg-agYRzbgdr0FL2GVxvPQwmpaHI-IpacbVRFIWVClZw=w2400"   class="column img"></a>
+      <a href="cartes.html"><img src="https://lh3.googleusercontent.com/dirXNFbiSq8aSWok5RT9x9lx7FZoniz3z-DC1rXVZgCSN7JY---yWFrWAA4QHor8aw6k9w5w9eglp57fJojwdYRhlA9EULy7BSEaO8ZZqfU16BpAvQPI7dvTrQJqYkVtpSZL625eOg=w2400"   class="column img"></a>
+    </div>
+  </div>
+  </div>
+  
+  <!--
+  <img src="https://lh3.googleusercontent.com/KfAAAXMU_sPdpodThlxAj1lCkuexyo03bZ7fC3Gn8UlyPoaGxbZgjrxa_uViNC8LR98JeXBJ2RcGMH2U-dGSMAy6sCAtVj7JljXd5OqBjh9G8DN-gKmjmacp2z7j2kTUDZjNC3Lw=w2400"   class="column img">
+   -->
+  
+  </body>
+  </html>  
