@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="favicon.jpg" rel="icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    text-align: center ;
+    word-spacing: 10px;
+}
+
+.sidenav {
+  display: none;
+}
+
+.sidenav a {
+  display: none;
+}
+
+.sidenav a:hover {
+  display: none;
+}
+
+.titre {
+    text-align: center ;
+    word-spacing: 0px ;
+}
+
+.text {
+    text-align: center ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:rgb(12, 12, 12)
+}
+
+a:hover {
+  color:rgb(130, 130, 130)
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  float: left;
+  padding: 10px;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.column2 img:hover {
+    opacity: 1;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row2 :after {
+  max-width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 40px;
+}
+
+.TEST {
+  width: 100%;
+}
+
+.rangee {
+  display: none;
+}
+
+.column3 {
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  display: none;
+}
+
+.column3 img {
+  display: none;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 img {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column4 iframe {
+  padding-left: 0%; 
+  padding-right: 0%; 
+  width: 100%; 
+  height: 250px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+.nav {
+  display: none;
+}
+
+.sidenav {
+  display:block;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  text-align: left ;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  display:block;
+  padding: 6px 6px 6px 32px;
+  text-decoration: left;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  display:block;
+  color: rgb(130, 130, 130)
+}
+
+.titre {
+  display:block;
+  text-decoration: left;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+}
+
+.text {
+    text-align:left ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: left;
+}
+
+a:visited {
+  text-decoration: left;
+  color:rgb(12, 12, 12)
+}
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.br {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  display: none;
+
+}
+
+
+
+.left {
+  display: none;
+}
+
+.right {
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  display: none;
+
+}
+
+.sidenav img{
+  max-width: 100%;
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  max-width: 100%;
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: block;
+}
+
+.column3 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+    opacity: 0.6;
+}
+
+.column3 img:hover {
+    opacity: 1;
+}
+
+.column1 {
+  float: none;
+}
+
+.column1 img {
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+.mySlides {
+  display: none;
+  padding: 0% 15% 0%;
+}
+
+.prev,
+.next {
+  top: 17%;
+}
+
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- navigation téléphone -->
+<div class="nav">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Animation/Animation.html">Animation</a>
+  <a href="../3 Demoreel/Demoreel.html">Démoreel</a>
+  <a href="https://www.instagram.com/qsydvpxc/" target="_blank">Photo</a>
+  <a href="../5 Zine/Zine.html"   style="color:#b4b4b4" >Zine</a>
+  <a href="../6 about/about.html">about</a>
+</div>
+
+<!-- autres navigations -->
+<div class="sidenav">
+  <img src="https://lh3.googleusercontent.com/tVPLcAE7uuyrpU49CsG7IjiYiaGRMePnkwzAQPv8aOgh6syfX40iupVFoRon-0_2hBhUeQE7CNcgvJKHRdNTH2wkRHCX1k21kp8Df5QicRkLWzvNiEtY6FbOCXq1NmA8C21NAaBgrg=w2400" class="img">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Animation/Animation.html">Animation</a>
+  <a href="../3 Demoreel/Demoreel.html" >Démoreel</a>
+  <a href="https://www.instagram.com/qsydvpxc/" target="_blank">Photo</a>
+  <a href="../5 Zine/Zine.html"   style="color:#b4b4b4" >Zine</a>
+  <br class="br">
+  <a href="../6 about/about.html">about</a>
+</div>
+
+
+<div class="main">
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 13</div>
+      <img src="https://lh3.googleusercontent.com/v-6_mcBkNKrS1HXudk0lqb-qTKJT7-d5kE_7yBzlHEaZUx7lknupFnbR5YbG9KhnqKoTwebmZWgky56KbAGy1FK3QwrhMQtPiqYV516gkLkdEP4GAOhDhNVk39Kt9_dejF_UwakO3Q=w2400" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 13</div>
+      <img src="https://lh3.googleusercontent.com/GoG3iHobbUcRqooU2nRiVZvAXfj7IEPsE1_KQeHqWx0x-qZZLyu_ijLrKtnNzeXZlXl5Kof8zipS4Xl1FFFOvXP8JJlAleayob-BXwoDDXNGEsBIFx0Lx_N0hixPYbphrjwf1Jrtmg=w2400" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 13</div>
+      <img src="https://lh3.googleusercontent.com/k8mOiiUZ5IVq2ln9jRNJWhxwYT22wsDowsImWiPRMGoz35VYhXW9_F9oeQNk18EIL6ycynE8OoEUAtX41LIGS1PXxCsj_HHVwVRoIczi5_-9VydXXCOO5eYGhKwx_-oy79siuCyI2Q=w2400" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 13</div>
+      <img src="https://lh3.googleusercontent.com/HicaI9bmR8oZVm6bj_Z0TfXnWDY1ldp1sOZu5RlwyvEcOaWYjXERtYsHihWLE5CVWxu8yuTqoONSdCbEQRDLHrb9nr4rWubTd0eVtVGp5XjzBSSAmuYGLRRdGKhmiRgQUbIq_Ix7jw=w2400" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 13</div>
+      <img src="https://lh3.googleusercontent.com/45UzvdL1d_u9d5h7nQXCH9okB2XActv0DWmeKJgVxw3JkFMMjOJfWDTGHqY7K1szG9qvyGqFQ4MGWWOvSRkO7tgJME7GMrDGF_jqS_lCSWDF4OlxfgTTe3JoioKAs6cHPUDzTR6bhg=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 13</div>
+      <img src="https://lh3.googleusercontent.com/mxLBQ5fMzyhjogTOB1tfC2dlZvW-gAz8XmEFV8f15elg5SuR0kgUmWUsooWtNcDI3XX5m18SXiP-OeA1-dru2ALXqjxQa_WLk5QfU7gmXTf7xh9_tNAHyoHXZFGnw3Z4GnJltSsueQ=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 13</div>
+      <img src="https://lh3.googleusercontent.com/1CwtT5wknZs-lCK4ROeGQPOtIB6ZEWyIwLH0OYmniOJnS5MemrV6vfWm3ZrEL1OCxEgAR09kZwphsb0_dy7LTEtT0BmNpsIOCEGWzu2un7q6vw2I-gEdUfcnUS60nn4w7QmzPJk5Qg=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 13</div>
+      <img src="https://lh3.googleusercontent.com/067yFvnyy_m8ZVDkE69Df2Qx8emTD-5A_ffWTVyeCCO-LD2ch3h3O13da3lKyryFyk9j_wLF7OvaJtLZa3BGlVEwniMhzvnFSC5N2sVe9IMgqf7_ADSrSgJSmTc_TGakowhEY-nwNA=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 13</div>
+      <img src="https://lh3.googleusercontent.com/BKDY-4VeZK5WZINMfkT624tKz7esROcsLZvTMM5jUWjsZvtTPwyVolUp7I7zTA9bb5ESQUtKwVxOK3pmDSLVvNPHkiBfPi7GyRUF_Xg9zovMODgf03gBMnfV0h4v6aSQkcZKakyz6Q=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 13</div>
+      <img src="https://lh3.googleusercontent.com/2vHglX6PQ4o_PwS9OjbrkZM5CAvDVPLog57HlfkNDLezoARx4p7sOOYeThQs6A-ea9IdrjEL25hYkoXP_Om6T8w9nAlY1Sljr5pc59G8zPqurT9wS3MeLsUYWhqrJm_d0xiDQ5ySWA=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 13</div>
+      <img src="https://lh3.googleusercontent.com/3wHs8SFoojIVlaDwh0Z3Bn3ZQaC1_SZ34HgI2yH_CCg_1v0QCWbPJnH5Mb_q_IMGch19PHPtYAI1qvBeOk-M3RS8pqiCeirvBxE_HDmtNq4EXabwkCTB7hnfQYWpZGLCHOLQ8DCA3Q=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 13</div>
+      <img src="https://lh3.googleusercontent.com/4EfiUGb_NzxAIJSAGXAfLC-CDhBTtdRdWEqnfL3c8ZD5NQgxFkYuSDWCtqBt-ygI4xk2n3qWmkSTC_4UYL5DtCE-66JpCahG9-h4t0PvIWr8xhF5ac9tJsmrQAxYqmB6iOjTd9frYg=w2400" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 13</div>
+      <img src="https://lh3.googleusercontent.com/p-bbyQ6QKzIGhh2DouRBkSOGf2n2Pu1sdQaKi529IAHSIfYJUPTgsiEP-EGDKdvDauSRhyZndA9UZNxFMDgfIVlz-4qMZABVM28za2NzGervf3H6MPU9CBRgF9VG9YHej2fX_vzujA=w2400" style="width:100%">
+    </div>
+
+
+  
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  
+    
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+<div class="row2">
+  <div class="column2 left" style="background-color:rgb(255, 255, 255);">
+    <a href="zine maison.html"><img src="https://lh3.googleusercontent.com/69Z6NjM4rJfxcrmLaNsVhJS_d-neiWJKWofW0tYwWD49myAYP-W8ogrMWhaoOEyO-L2L5OHiTRQ6zKNYadHvNCn40XxMV-x2dhIGOkUnhQ5k-SaOcgHv0yFOe9qNltmSybnXzjKo9w=w2400"   class="column img"></a>
+    <a href="zine etoiles.html"><img src="https://lh3.googleusercontent.com/0AIHNZztNNkZZZDWQjWcx6axMAzLGQUx4B1U4Ne5IIoGSZnlLU0Xh70Oaqiah3RsQBPt80cPtoO46CPCYAgoPNPZWVIjrD0dP5ido2pyTWb3hcLPmWBF0lkPxmQ2JLQMuyC5BHvbXw=w2400"   class="column img"></a>
+    <a href="zine intervalles.html"><img src="https://lh3.googleusercontent.com/mRwv1pV-Mc5s-AnN0d38w3EetYXeVSbBBZJ8uQ3tEOtumP_c7-3HPAPjQh2GRBz9zwVRx5gGbABRQ_3LzTXeQQGbMboGOixH9Zkusn9AHIEiTVe94HQmkFQYUMuqxaIg154pdcMNfw=w2400"   class="column img"></a>
+  </div>
+  <div class="column2 right" style="background-color:rgb(255, 255, 255);">
+    <a href="zine playa.html"><img src="https://lh3.googleusercontent.com/5lXCoxMutUBxj_PygmwvMbj0GhN-WEfm7V8IsZt4XUBNDwgpRGtSRElVAJxFlYr4_1WNBbCqiWhzppSCXo9_m9FQNf66ROnjrYPPTWcsZU7MFi5YXDscvf6_EHTFkGxawzsDzP-N9A=w2400"   class="column img"></a>
+    <a href="zine manif.html"><img src="https://lh3.googleusercontent.com/XG5sdJAkzvD51zFrDnXxqbzNrgJVzu73osBokgnQ1AVIuChH8ZIDVZuYCeiXCVdLquAX3X88pFnkR3cdiQPITMWTl8KeJapWRDFoHdMsvXkHHRdpg37A2hXTl7lfkBxRjCz6cxkFtA=w2400"   class="column img"></a>
+  </div>
+</div>
+
+<div class="row3">
+  <div class="column3" style="background-color:rgb(255, 255, 255);">
+    <a href="zine maison.html"><img src="https://lh3.googleusercontent.com/69Z6NjM4rJfxcrmLaNsVhJS_d-neiWJKWofW0tYwWD49myAYP-W8ogrMWhaoOEyO-L2L5OHiTRQ6zKNYadHvNCn40XxMV-x2dhIGOkUnhQ5k-SaOcgHv0yFOe9qNltmSybnXzjKo9w=w2400"   class="column img"></a>
+    <a href="zine manif.html"><img src="https://lh3.googleusercontent.com/XG5sdJAkzvD51zFrDnXxqbzNrgJVzu73osBokgnQ1AVIuChH8ZIDVZuYCeiXCVdLquAX3X88pFnkR3cdiQPITMWTl8KeJapWRDFoHdMsvXkHHRdpg37A2hXTl7lfkBxRjCz6cxkFtA=w2400"   class="column img"></a>
+  </div>
+  <div class="column3" style="background-color:rgb(255, 255, 255);">
+    <a href="zine etoiles.html"><img src="https://lh3.googleusercontent.com/0AIHNZztNNkZZZDWQjWcx6axMAzLGQUx4B1U4Ne5IIoGSZnlLU0Xh70Oaqiah3RsQBPt80cPtoO46CPCYAgoPNPZWVIjrD0dP5ido2pyTWb3hcLPmWBF0lkPxmQ2JLQMuyC5BHvbXw=w2400"   class="column img"></a>
+    <a href="zine playa.html"><img src="https://lh3.googleusercontent.com/5lXCoxMutUBxj_PygmwvMbj0GhN-WEfm7V8IsZt4XUBNDwgpRGtSRElVAJxFlYr4_1WNBbCqiWhzppSCXo9_m9FQNf66ROnjrYPPTWcsZU7MFi5YXDscvf6_EHTFkGxawzsDzP-N9A=w2400"   class="column img"></a>
+  </div>
+  <div class="column3" style="background-color:rgb(255, 255, 255);">
+    <a href="zine intervalles.html"><img src="https://lh3.googleusercontent.com/mRwv1pV-Mc5s-AnN0d38w3EetYXeVSbBBZJ8uQ3tEOtumP_c7-3HPAPjQh2GRBz9zwVRx5gGbABRQ_3LzTXeQQGbMboGOixH9Zkusn9AHIEiTVe94HQmkFQYUMuqxaIg154pdcMNfw=w2400"   class="column img"></a>
+  </div>
+</div>
+</div>
+
+<!--
+<img src="https://lh3.googleusercontent.com/KfAAAXMU_sPdpodThlxAj1lCkuexyo03bZ7fC3Gn8UlyPoaGxbZgjrxa_uViNC8LR98JeXBJ2RcGMH2U-dGSMAy6sCAtVj7JljXd5OqBjh9G8DN-gKmjmacp2z7j2kTUDZjNC3Lw=w2400"   class="column img">
+ -->
+
+</body>
+</html>  
