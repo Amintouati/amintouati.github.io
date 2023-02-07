@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="../favicon.jpg" rel="icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    text-align: center ;
+    word-spacing: 10px;
+}
+
+.sidenav {
+  display: none;
+}
+
+.sidenav a {
+  display: none;
+}
+
+.sidenav a:hover {
+  display: none;
+}
+
+.titre {
+    text-align: center ;
+    word-spacing: 0px ;
+}
+
+.text {
+    text-align: center ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:rgb(12, 12, 12)
+}
+
+a:hover {
+  color:rgb(130, 130, 130)
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.TEST {
+  width: 100%;
+}
+
+.rangee {
+  display: none;
+}
+
+
+/* Clear floats after the columns */
+.row3:after {
+  display: none;
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 img {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column4 iframe {
+  padding-left: 0%; 
+  padding-right: 0%; 
+  width: 100%; 
+  height: 250px;
+}
+
+.gauche {
+  font-size:smaller;
+  padding-right: 0%;
+}
+
+.droite {
+  font-size:smaller;
+  padding-left: 0%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+.nav {
+  display: none;
+}
+
+.sidenav {
+  display:block;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  text-align: left ;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  display:block;
+  padding: 6px 6px 6px 32px;
+  text-decoration: left;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  display:block;
+  color: rgb(130, 130, 130)
+}
+
+.titre {
+  display:block;
+  text-decoration: left;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+}
+
+.text {
+    text-align:left ;
+    max-width: 100%;
+}
+
+a:link {
+  text-decoration: left;
+}
+
+a:visited {
+  text-decoration: left;
+  color:rgb(12, 12, 12)
+}
+
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  display: block;
+  float: left;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.column2 img {
+  display: block;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row2 :after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 40px;
+}
+
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.br {
+  display: block;
+}
+
+
+
+.sidenav img{
+  max-width: 100%;
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  max-width: 100%;
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: block;
+}
+
+.column3 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+}
+
+.column1 {
+  float: none;
+}
+
+.column1 img {
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.gauche {
+  font-size:smaller;
+  padding-right: 50%;
+}
+
+.droite {
+  font-size:smaller;
+  padding-left: 50%;
+}
+
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- navigation téléphone -->
+<div class="nav">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Animation/Animation.html">Animation</a>
+  <a href="../3 Demoreel/Demoreel.html">Démoreel</a>
+  <a href="https://www.instagram.com/qsydvpxc/" target="_blank">Photo</a>
+  <a href="../5 Zine/Zine.html" >Zine</a>
+  <a href="../6 about/about.html" style="color:#b4b4b4">about</a>
+</div>
+
+<!-- autres navigations -->
+<div class="sidenav">
+  <img src="https://lh3.googleusercontent.com/tVPLcAE7uuyrpU49CsG7IjiYiaGRMePnkwzAQPv8aOgh6syfX40iupVFoRon-0_2hBhUeQE7CNcgvJKHRdNTH2wkRHCX1k21kp8Df5QicRkLWzvNiEtY6FbOCXq1NmA8C21NAaBgrg=w2400" class="img">
+  <p class="titre">AMIN TOUATI</p>
+  <a href="../1 Illustration/Illustration.html">Illustration</a>
+  <a href="../2 Animation/Animation.html">Animation</a>
+  <a href="../3 Demoreel/Demoreel.html" >Démoreel</a>
+  <a href="https://www.instagram.com/qsydvpxc/" target="_blank">Photo</a>
+  <a href="../5 Zine/Zine.html">Zine</a>
+  <br class="br">
+  <a href="../6 about/about.html" style="color:#b4b4b4">about</a>
+</div>
+
+<div class="main">
+
+  <div class="row1">
+    <div class="column1" style="background-color:rgb(255, 255, 255);">
+      <img src="https://lh3.googleusercontent.com/R6MxBkriOmKs19GzLWUlqI_soKKT5NvR5FJB7kUi0q4VUNPtjhiDaylgTr3BqB5Oi4gWarnFWovyWmV1t_NzTkC_iqpPnenCJznDctID7sypJJt2xDxjvUgJjBBE-Rs3GmdnG3meig=w2400"  class="column img"></a>
+
+      <p class="gauche"> Salut, <br>je m'appelle Amin Touati, étudiant en 2ème année de  DNMADe animation 2d experimental près de Clermont Ferrand. J’aime regarder de l’animation autant que j’aime la produire, c’est pareil avec plusieurs domaines comme le dessin, la photographie argentique, les courts métrages, la bd, les zines, la cuisine, entre autres. J’essaie toujours de lier la technique à l’expérimental. Je suis à la recherche d’un stage entre le 1 juin et le 30 septembre 2023, si mon profil vous intéresse, n'hésitez pas à me rejoindre avec mes contacts ci-dessous.</p>
+
+      <p class="droite">Hi, <br> my name is Amin Touati, i'm a 2nd year student in 2d experimental animation near Clermont Ferrand. I like to watch animation as much as I like to produce it, it's the same with several domains like drawing, film photography, short films, comics, zines, cooking, among others. I always try to link the technical with the experimental. I'm looking for an internship between June 1st and September 30th 2023, if you are interested in my profile, don't hesitate to join me with my contacts below.</p>
+
+      <p style="font-size:smaller">⠀ <br> (+33) 07 68 54 34 80 <br> amintb31@gmail.com <br> @cxpvdysq</p>
+
+      <div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/794648823?h=5edc33c92b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Facettes_Amin Touati_@cxpvdysq"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+      <p class="gauche" >Deuxième prix régional, Facettes est un court métrage réalisé dans l’objectif de participer au concours étudiant Crous sur le thème "Rêve". Réalisé entre mars 2022 et mai 2022 à Clermont-Ferrand, Aubière, et Cournon d'Auvergne. <br> <br> Second regional prize, Facettes is a Short film realized in order to participate to the Crous student contest on the theme "Dream". Realized between March 2022 and May 2022 in Clermont-Ferrand, Aubière, and Cournon d'Auvergne. <br> <br> Directors / Réalisateurs: Amin Touati (@cxpvdysq) <br> Music and Sound / Musique et Son: Zacchary Goldman (@zuk_gdn) <br> Voice / voix: Amin Touati, Erell Garon <br> Production year / Année de production : 2022 </p>
+
+      <div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/793865040?h=3ab3189dd1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lumen_Amin Touati_@cxpvdysq"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+      <p class="gauche" > Exercice de film au fusain. </p> 
+      <p class="gauche" > Charcoal film exercise. </p>
+
+      <div style="padding:40% 0 0 0;position:relative;display: grid;"><iframe src="https://player.vimeo.com/video/796372844?h=5000adb456&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="&amp;eacute;toiles_Amin toaut"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+      <p class="gauche" > Dans le cadre du Festival international du court métrage de Clermont-Ferrand, nous avons fait un atelier avec Bruno Bouchard où nous réalisons des animations en grattant et dessinant sur pellicule sur une copie du film Les Roseaux Sauvages. <br> </p> 
+      <p class="gauche" > During the International Short Film Festival of Clermont-Ferrand, we did a workshop with Bruno Bouchard where we made animations by scratching and drawing on film on a copy of the film Les Roseaux Sauvages.</p>
+
+      
+    </div>
+  </div>
+
+</div>
+
+<!--
+<img src="https://lh3.googleusercontent.com/KfAAAXMU_sPdpodThlxAj1lCkuexyo03bZ7fC3Gn8UlyPoaGxbZgjrxa_uViNC8LR98JeXBJ2RcGMH2U-dGSMAy6sCAtVj7JljXd5OqBjh9G8DN-gKmjmacp2z7j2kTUDZjNC3Lw=w2400"   class="column img">
+ -->
+
+</body>
+</html> 11 ù=$:
