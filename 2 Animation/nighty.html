@@ -48,6 +48,7 @@ body {
 
 a:link {
   text-decoration: none;
+    style="color:#000000"
 }
 
 a:visited {
@@ -65,21 +66,22 @@ a:hover {
 }
 
 /* Create two unequal columns that floats next to each other */
-.column2 {
+.column {
   float: left;
   padding: 10px;
 }
 
-.column2 img {
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
     opacity: 0.6;
 }
 
-.column2 img:hover {
+.column img:hover {
     opacity: 1;
 }
+
 
 .left {
   width: 50%;
@@ -90,7 +92,7 @@ a:hover {
 }
 
 /* Clear floats after the columns */
-.row2 :after {
+.row :after {
   max-width: 100%;
   content: "";
   display: table;
@@ -119,34 +121,7 @@ a:hover {
   display: none;
 }
 
-/* Create two equal columns that floats next to each other */
-.column1 {
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
 
-/* Clear floats after the columns */
-.row1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column1 img {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.column4 iframe {
-  padding-left: 0%; 
-  padding-right: 0%; 
-  width: 100%; 
-  height: 250px;
-}
 
 @media only screen and (min-width: 1000px) {
 
@@ -197,6 +172,7 @@ a:hover {
 
 a:link {
   text-decoration: left;
+    style="color:#000000"
 }
 
 a:visited {
@@ -214,7 +190,7 @@ a:visited {
 }
 
 /* Create two unequal columns that floats next to each other */
-.column2 {
+.column {
   display: none;
 
 }
@@ -230,9 +206,23 @@ a:visited {
 }
 
 /* Clear floats after the columns */
-.row2:after {
+.row:after {
   display: none;
 
+}
+
+/* trois colonnes */
+.colonne {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rangee:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .sidenav img{
@@ -247,12 +237,15 @@ a:visited {
   display: block;
 }
 
+
+
 /* Clear floats after the columns */
 .row3:after {
   content: "";
   display: table;
   clear: both;
   display: block;
+
 }
 
 .column3 img {
@@ -267,17 +260,6 @@ a:visited {
     opacity: 1;
 }
 
-.column1 {
-  float: none;
-}
-
-.column1 img {
-  padding-left: 25%;
-  padding-right: 25%;
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
 
 }
 
@@ -288,6 +270,7 @@ a:visited {
 <!-- navigation téléphone -->
 <div class="nav">
   <p class="titre">AMIN TOUATI</p>
+  <a href="../0 ffe/ffe.html"  >Les mots qui manquent</a>
   <a href="../1 Illustration/Illustration.html" style="color:#000000">Illustration</a>
   <a href="../2 Animation/Animation.html" style="color:#b4b4b4" >Animation</a>
   <a href="../3 Demoreel/Demoreel.html" style="color:#000000" >Démoreel</a>
@@ -300,6 +283,7 @@ a:visited {
 <div class="sidenav">
   <a href="../index.html"><img src="https://lh3.googleusercontent.com/tVPLcAE7uuyrpU49CsG7IjiYiaGRMePnkwzAQPv8aOgh6syfX40iupVFoRon-0_2hBhUeQE7CNcgvJKHRdNTH2wkRHCX1k21kp8Df5QicRkLWzvNiEtY6FbOCXq1NmA8C21NAaBgrg=w2400" class="img"></a>
   <a href="../index.html"><p class="titre">AMIN TOUATI</p></a>
+  <a href="../0 ffe/ffe.html"  >Les mots qui manquent</a> <BR>
   <a href="../1 Illustration/Illustration.html">Illustration</a>
   <a href="../2 Animation/Animation.html" style="color:#b4b4b4">Animation</a>
   <a href="../3 Demoreel/Demoreel.html" >Démoreel</a>
