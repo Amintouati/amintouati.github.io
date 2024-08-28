@@ -1,0 +1,194 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titre {
+  word-spacing: 0px ;
+}
+
+
+
+.text {
+  text-align: center ;
+  max-width: 100%;
+}
+
+a:link {
+text-decoration: none;
+color: #000000;
+
+}
+
+a:visited {
+text-decoration: none;
+color:rgb(12, 12, 12)
+}
+
+a:hover {
+color:rgb(130, 130, 130)
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+.sidenav {
+  display:block;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  text-align: left ;
+  padding-top: 20px;
+}
+  
+.sidenav a {
+  display:block;
+  font-size: 13px;
+  color: #818181;
+  display: block;
+}
+
+.textsidenav {
+  padding: 6px 6px 6px 32px;
+
+}
+  
+.sidenav a:hover {
+  display:block;
+  color: rgb(130, 130, 130)
+}
+
+.titre {
+  display:block;
+  text-decoration: left;
+  font-size: 15px;
+  color: #000000;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: medium;
+}
+
+.text {
+  text-align:left ;
+  max-width: 100%;
+}
+
+a:link {
+  color: #000000;
+
+}
+
+a:visited {
+  text-decoration: left;
+  color:rgb(12, 12, 12)
+}
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+/* Create two unequal columns that floats next to each other */
+.column2 {
+  display: none;
+
+}
+
+
+
+.left {
+  display: none;
+}
+
+.right {
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  display: none;
+
+}
+
+.sidenav img{
+  max-width: 90%;
+  padding-left: 20px;
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  max-width: 100%;
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: block;
+
+}
+
+.column3 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  display: block;
+  opacity: 0.6;
+}
+.column3 img:hover {
+  opacity: 1;
+}
+
+.column1 {
+  float: none;
+}
+
+.column1 img {
+width: 80%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.mySlides {
+  display: none;
+  padding: 0% 15% 0%;
+}
+
+.prev,
+.next {
+  top: 17%;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+}
+
+
+
+
+
+
+

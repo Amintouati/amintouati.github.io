@@ -1,0 +1,32 @@
+
+.div1 {
+    display: initial; 
+  }
+  
+  .div2 {
+    display: none; 
+  }
+  
+  @media only screen and (min-width: 1000px) {
+  
+  .div1 {
+    display: none; 
+  }
+  
+  .div2 {
+    display: initial; 
+    grid-area: navigation; 
+    width: 200px;
+  }
+  .div3 { 
+    grid-area: page; 
+  }
+  
+  .grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:'navigation page';
+  }
+  
+  }
+  

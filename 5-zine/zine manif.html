@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="../favicon.jpg" rel="icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css.css">
+</head>
+<body>
+  <div class="main">
+
+  <div class="container">
+    <div class="mySlides">
+      <img src="https://lh3.googleusercontent.com/g43qePidbLnime2ruzYxaMk1AMlX-CggzJADVHKhzakIV6BRYKFyNfRg9-4PQ8oz6MNmVb0YGTIJ38qUIT8rGOKCkdnsN1sxfKRzO1fgPsEBCybPS6y6Dg4pkHLaQm2U1s3eQeiSCg=w2400" style="width:100%">
+      <div class="numbertext">1 / 6</div>
+    </div>
+  
+    <div class="mySlides">
+      <img src="https://lh3.googleusercontent.com/F7ARXVwP1kt1ubyXe9JJBsTttD-0dzyVX8nNg9OqSC4fQxRuNGx19eKNyFkof6Fflr2SSQUQMgqT8Sx26dGs7VfAwB84vOZokYUBjQ77UkU7ZTya8clCZv3-53m4JcYBZ6vDftn0VQ=w2400" style="width:100%">
+      <div class="numbertext">2 / 6</div>
+    </div>
+  
+    <div class="mySlides">
+      <img src="https://lh3.googleusercontent.com/np1DU6a1F5cxRfC29I-kS8FpyIQF2cKJBNwWJJ-dPFx6lsDNr5eBVqs2OyLEpY4aWEKyDF2Sn0MhftRZ_MZhxhnd6Om9p_gVY7ryfCUoM51WFWHsWZXXJ2atdAApGCYYFYF6crJmig=w2400" style="width:100%">
+      <div class="numbertext">3 / 6</div>
+    </div>
+      
+    <div class="mySlides">
+      <img src="https://lh3.googleusercontent.com/Ls3ObLdCTiaAAztn2QhfXTrwi5Wo1Olj3EynkbwVOqpCLB1yhYC5eoFMem18npR7TtkeFRcjCHsikZmEtvUHBlYa37t4yZUzn--G3q8KojOTLj1xDEgMn8c2xvS3b6W6V0v1Ko2VYw=w2400" style="width:100%">
+      <div class="numbertext">4 / 6</div>
+    </div>
+  
+    <div class="mySlides">
+      <img src="https://lh3.googleusercontent.com/a-vu1dWsW8pFRNyDlI9BkfJchOB25tOqUCVn2zFEkUgWyEFtXzhZpEF6PumA2FO4tpVw6CppADTgkgpgeYjdzdRoNPZC5j38rDETJmHiABiq_siU7FI9KVRIDq0T6OsD_xnQtyF-Cw=w2400" style="width:100%">
+      <div class="numbertext">5 / 6</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="https://lh3.googleusercontent.com/gIJoPUfoDjiWktKe9WQxVAFNm0Pdnis92rF2-vD9jGfNqXdyhd8Wjq49isgWCZKVbiHOIu8FDN-fBGHFkXlo6fIMLuDme0cJ5-rbkd1HjhWZwuYhHvWONuuRDSVvUBaTMliDM5sSVw=w2400" style="width:100%">
+      <div class="numbertext">6 / 6</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  
+    
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
