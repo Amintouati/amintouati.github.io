@@ -7,8 +7,106 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css.css">
-<link rel="stylesheet" href="../grid layout and responsive.css">
-</head>
+
+<style>
+
+    .div1 {
+      display: initial; 
+    }
+    
+    .div2 {
+      display: none; 
+    }
+    
+    .div21 {
+      width: 100%;
+    }
+
+    .div3 { 
+      width: 49%;
+      padding-bottom: 1%;
+    }
+
+    .div4 {
+      width: 49%;
+      padding-bottom: 1%;
+    }
+    
+    .div5 {
+      width: 49%;
+      padding-bottom: 1%;
+    }
+
+    .div6 {
+      width: 49%;
+      padding-bottom: 1%;
+    }
+
+    .div7 {
+      width: 100%;
+    }
+
+
+@media only screen and (min-width: 1000px) {
+
+    .div1 {
+      display: none; 
+    }
+       
+    .div2 {
+      display: initial; 
+      grid-area: navigation; 
+      width: 200px;
+    }    
+
+    .div21 {
+      grid-area: demoreel;
+    }
+
+    .div3 {
+      grid-area: img1; 
+      width: 100%;
+      padding: 1%;
+    }
+    
+    .div4 { 
+      grid-area: img2; 
+      width: 100%;
+      padding: 1%;
+    }
+
+    .div5 {
+      grid-area: img3; 
+      width: 100%;
+      padding: 1%;
+    }
+    
+    .div6 {
+      grid-area: img4; 
+      width: 100%;
+      padding: 1%;
+    }
+
+    .div7 {
+      grid-area: exo; 
+    }
+
+  
+
+   .grid-container {
+    display: grid;
+    grid-template-columns: 200px 2fr 2fr 4fr ;
+    grid-template-rows: auto auto auto  ;
+    grid-template-areas:
+    'navigation demoreel demoreel demoreel'
+    'navigation img1 img2 exo'
+    'navigation img3 img4 exo'
+    ;
+    }
+}
+
+
+</style></head>
 
 <body>
 
@@ -17,23 +115,34 @@
 
 <div class="grid-container">
 
+
   <div class="div2">
     <object type="text/html" data="demoreel_sidenav.html" width="100%" height="500" ></object>
   </div>
 
 
-  <div class="div3">
-
-    <div class="main" >
-
-        <div class="row1">
-
-          <div class="column1" style="background-color:rgb(255, 255, 255);">
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1005067503?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Démoreel-11/03/2024_Amin-Touati_@cxpvdysq"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-
+  <div class="div21">
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/1005067503?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Démoreel-11/03/2024_Amin-Touati_@cxpvdysq">
+      </iframe>
     </div>
+    <script src="https://player.vimeo.com/api/player.js">
+    </script>
+  </div>
 
+  <img src="https://lh3.googleusercontent.com/pw/AP1GczMWcopnDpOUSByRe1LKvZuv0Wcq_-Z25mGF_BpvkBdWTevoGO2lg7EMxXf_zqiaJ37pbCvk9rg1-DNlK0JaMqRKrwXW7q30QpMeXjvA7TNqnzzIt7Ka=w2400"  class="div3">
+  <img src="https://lh3.googleusercontent.com/pw/AP1GczMNDN4uGGg6Yg2ePqEC2DRyqYBvbj63pW7W0hcSGW_VRKbu1rZQ1ijRZVB5hZB0hgZCLb265-lnsy9C9bo_D5we0s0GxG5lEKJpLKMpBw_1Ug6eyxIX=w2400"  class="div4">
+  <img src="https://lh3.googleusercontent.com/pw/AP1GczNpkZiLnl3n27I8ExueyScU9kijcOH-bECokip8G1s3GA8h3hWVctZYdz5rJVNi4SGy6kqAAFnRKqbk4qHIywXj587loFbGf-tjPQbUiAka8a5q9vXj=w2400"  class="div5">
+  <img src="https://lh3.googleusercontent.com/pw/AP1GczObCdCUzDBw8p__zLR652wcy_4l3mzqsWiykQjx8haagtaTwaJM9YjCiP-tB1Rib07P_o-_voa0rdIUA-MUBsqHlFTnpnKAfX6gD-MsO7fkoLMNCEH3=w2400"  class="div6">
+
+
+  <div class="div7">
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/1025254470?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Décadence - WIP Anim improvisé inspiré d'illu que j'ai fait pour un zine entre potes"> 
+      </iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js">
+    </script>
   </div>
 
 </div>
